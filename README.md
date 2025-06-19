@@ -23,7 +23,7 @@ Além da tecnologia, gosto de me dedicar a hobbies que estimulam criatividade e 
 
 - 📚 Leitura de livros sobre produtividade, desenvolvimento pessoal. Autor preferido de ficção: Dan Brown.
 - 🎧 Ouvir Rock, ou sons relaxantes enquanto trabalho.
-- ⚽ Passeio com e esposa e nossas dogs.
+- ⚽ Passeio com a esposa e nossas dogs.
 - 🎮 Jogos no PS5
 
 Acredito que manter o equilíbrio entre a vida pessoal e profissional é essencial para uma carreira sustentável e criativa.
