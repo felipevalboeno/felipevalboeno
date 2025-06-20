@@ -2,13 +2,20 @@ site_name: Felipe Valboeno - [MkDocs]
 
 theme:
   name: material
-  custom_dir: site/overrides
+  logo: assets/logo.png
+  palette:
+    - scheme: default
+      primary: custom
+      accent: teal
+
+  custom_dir: overrides
   features:
     - navigation.tabs
 
 nav:
   - Home: index.md
   - Sobre mim: about.md
+
 
 extra_css:
   - custom.css
