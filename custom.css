@@ -1,21 +1,23 @@
+:root {
+  --md-primary-fg-color: #2e2e2c;
+}
 
+.md-header {
+  background-color: var(--md-primary-fg-color) !important;
+}
 
 .md-tabs {
   background-color: #03a2b7 !important;
 }
 
-
-
 .md-header__topic .md-ellipsis {
-  background:#2e2e2c;
+  background-color: var(--md-primary-fg-color);
+  color: white; /* opcional, para melhorar contraste */
 }
 
-
+/* Ocultar item ativo do menu lateral, se desejar ativar depois */
 /*
 .md-nav__item--active {
   display: none !important;
-}*/
-
-.md-header {
-  background-color: #2e2e2c !important;
 }
+*/
