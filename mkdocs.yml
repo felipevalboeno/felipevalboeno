@@ -1,0 +1,17 @@
+site_name: Felipe Valboeno - [MkDocs]
+
+theme:
+  name: material
+  custom_dir: site/overrides
+  features:
+    - navigation.tabs
+
+nav:
+  - Home: index.md
+  - Sobre mim: about.md
+
+extra_css:
+  - custom.css
+
+markdown_extensions:
+  - attr_list
