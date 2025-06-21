@@ -14,7 +14,12 @@ Sou desenvolvedor Java com foco em aplicações Spring Boot, APIs RESTful e inte
 
 ## 🐍 Snake eating my contributions
 
-![snake gif](https://github.com/felipevalboeno/felipevalboeno/blob/output/github-contribution-grid-snake.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/felipevalboeno/felipevalboeno/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/felipevalboeno/felipevalboeno/output/github-contribution-grid-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/felipevalboeno/felipevalboeno/output/github-contribution-grid-snake.svg" />
+</picture>
+
 
 ## 📌 Projetos em destaque
 - [Projeto SpringBoot](https://github.com/felipevalboeno/workshop-springboot4-jpa): Trata-se de um projeto de prática e estudo das tecnologias SpringBoot, JPA/Hibernate utilizando o banco de dados em memória H2 para os testes.
@@ -43,8 +48,4 @@ Acredito que manter o equilíbrio entre a vida pessoal e profissional é essenci
   <a href="https://www.linkedin.com/in/fvalboeno/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
 </div>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/felipevalboeno/felipevalboeno/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/felipevalboeno/felipevalboeno/output/github-contribution-grid-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/felipevalboeno/felipevalboeno/output/github-contribution-grid-snake.svg" />
-</picture>
+
