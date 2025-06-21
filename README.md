@@ -8,6 +8,14 @@ Sou desenvolvedor Java com foco em aplicações Spring Boot, APIs RESTful e inte
 - SQL | MySQL | PostgreSQL
 - BPMN e ERP's.
 
+## 📊 GitHub Stats
+
+![Felipe's GitHub stats](https://github-readme-stats.vercel.app/api?username=felipevalboeno&show_icons=true&theme=tokyonight)
+
+## 🐍 Snake eating my contributions
+
+![snake gif](https://github.com/felipevalboeno/felipevalboeno/blob/output/github-contribution-grid-snake.svg)
+
 ## 📌 Projetos em destaque
 - [Projeto SpringBoot](https://github.com/felipevalboeno/workshop-springboot4-jpa): Trata-se de um projeto de prática e estudo das tecnologias SpringBoot, JPA/Hibernate utilizando o banco de dados em memória H2 para os testes.
 - [API de Produtos](https://github.com/felipevalboeno/workshop-backend-restfull): Trata-se de um projeto base de CRUD completo com SpringBoot feito no vsCode. Muito útil para iniciantes terem uma base de CRUD no padrão MVC com Spring.
@@ -30,7 +38,3 @@ Acredito que manter o equilíbrio entre a vida pessoal e profissional é essenci
 
 ## 📫 Como me encontrar
 - Email: felipevalboeno@hotmail.com
--  [-> Meu LinkedIn](https://www.linkedin.com/in/fvalboeno/)
-
-## Meu MkDocs site
--  [-> Meu  MKDOCS](https://felipevalboeno.github.io/felipevalboeno)
