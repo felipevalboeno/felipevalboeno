@@ -2,10 +2,10 @@
 Sou desenvolvedor Java com foco em aplicações Java, Spring Boot, APIs RESTful e integração com banco de dados. Apaixonado por aprender novas tecnologias e resolver problemas com código limpo e bem estruturado.
 
 <p>
-  <a href="mailto:felipevalboeno@hotmail.com" target="_blank" style="text-decoration:none;">
+  <a href="mailto:felipevalboeno@hotmail.com" target="_blank" style="text-decoration:none; margin-right:8px;">
     <img src="https://img.shields.io/badge/Email-felipevalboeno@hotmail.com-blue?style=for-the-badge&logo=gmail&logoColor=white">
   </a>
-  <a href="https://www.linkedin.com/in/fvalboeno/" target="_blank" style="text-decoration:none; margin-right:8px;">
+  <a href="https://www.linkedin.com/in/fvalboeno/" target="_blank" style="text-decoration:none;">
     <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
   </a>
 </p>
