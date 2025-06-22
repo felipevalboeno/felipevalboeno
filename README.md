@@ -69,6 +69,10 @@ Acredito que manter o equilíbrio entre a vida pessoal e profissional é essenci
     <img src="https://img.shields.io/badge/-Ver%20o%20Site%20MkDocs-000000?style=for-the-badge&logo=readthedocs&logoColor=white">
   </a>
 
+
+##
+[![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)](https://github.com/piyushsuthar/github-readme-quotes)
+
 #
 ![Visualizações de perfil](https://komarev.com/ghpvc/?username=felipevalboeno&label=Visualiza%C3%A7%C3%B5es&color=0e75b6&style=flat)
 
