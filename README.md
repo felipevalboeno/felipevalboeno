@@ -61,9 +61,8 @@ Acredito que manter o equilíbrio entre a vida pessoal e profissional é essenci
   </a>
 
 #
- <a href="https://github.com/DenverCoder1/Simple-View-Counter">
-  <img alt="Visualizações de perfil" title="Visualizações de perfil no GitHub" src="https://freshidea.com/jonah/app/felipevalboeno-profile-views"/>
-</a>
+![Visualizações de perfil](https://komarev.com/ghpvc/?username=felipevalboeno&label=Visualiza%C3%A7%C3%B5es&color=0e75b6&style=flat)
+
 
  
 
