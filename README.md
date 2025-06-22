@@ -1,19 +1,22 @@
 # 👋 Olá, eu sou o Felipe Valboeno!
 Sou desenvolvedor Java com foco em aplicações Java, Spring Boot, APIs RESTful e integração com banco de dados. Apaixonado por aprender novas tecnologias e resolver problemas com código limpo e bem estruturado.
 
-📫 Como me encontrar
-- Email: felipevalboeno@hotmail.com
 <div>
-  <a href="https://www.linkedin.com/in/fvalboeno/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+  <a href="mailto:felipevalboeno@hotmail.com" target="_blank" style="display:inline-block;">
+    <img src="https://img.shields.io/badge/Email-felipevalboeno@hotmail.com-blue?style=for-the-badge&logo=gmail&logoColor=white">
+  </a>
+  <a href="https://www.linkedin.com/in/fvalboeno/" target="_blank" style="display:inline-block;">
+    <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+  </a>
 </div>
 
 
 ## 🚀 Tecnologias e ferramentas que uso
 <div style="display: inline_block"><br>
-<img align="center" alt="Feltex-Java" height="100" width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
-<img align="center" alt="Feltex-Spring" height="100" width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" />
-<img align="center" alt="Feltex-github" height="100" width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubcodespaces/githubcodespaces-original.svg" />
-<img align="center" alt="Feltex-gitlab" height="100" width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" />
+<img align="center" alt="Feltex-Java" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+<img align="center" alt="Feltex-Spring" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" />
+<img align="center" alt="Feltex-github" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubcodespaces/githubcodespaces-original.svg" />
+<img align="center" alt="Feltex-gitlab" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" />
 <img align="center" alt="Feltex-mysql" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
 <img align="center" alt="Feltex-html" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
 <img align="center" alt="Feltex-html" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hibernate/hibernate-original-wordmark.svg" />
@@ -28,7 +31,6 @@ Sou desenvolvedor Java com foco em aplicações Java, Spring Boot, APIs RESTful 
 ## 
 ![Felipe's GitHub stats](https://github-readme-stats.vercel.app/api?username=felipevalboeno&show_icons=true&theme=tokyonight)
 
-🐍 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/felipevalboeno/felipevalboeno/output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/felipevalboeno/felipevalboeno/output/github-contribution-grid-snake.svg" />
