@@ -1,8 +1,14 @@
 # 👋 Olá, eu sou o Felipe Valboeno!
-Sou desenvolvedor Java com foco em aplicações Spring Boot, APIs RESTful e integração com banco de dados. Apaixonado por aprender novas tecnologias e resolver problemas com código limpo e bem estruturado.
+Sou desenvolvedor Java com foco em aplicações Java, Spring Boot, APIs RESTful e integração com banco de dados. Apaixonado por aprender novas tecnologias e resolver problemas com código limpo e bem estruturado.
+
+📫 Como me encontrar
+- Email: felipevalboeno@hotmail.com
+<div>
+  <a href="https://www.linkedin.com/in/fvalboeno/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+</div>
+
 
 ## 🚀 Tecnologias e ferramentas que uso
-
 <div style="display: inline_block"><br>
 <img align="center" alt="Feltex-Java" height="100" width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
 <img align="center" alt="Feltex-Spring" height="100" width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" />
@@ -14,16 +20,15 @@ Sou desenvolvedor Java com foco em aplicações Spring Boot, APIs RESTful e inte
 <img align="center" alt="Feltex-html" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" /> 
 <img align="center" alt="Feltex-html" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg" /> 
 <img align="center" alt="Feltex-html" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original-wordmark.svg" />
-<img align="center" alt="Feltex-html" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg" />              
-
+<img align="center" alt="Feltex-html" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg" /> 
+<img align="center" alt="Feltex-html" height="50" width="50" src="https://raw.githubusercontent.com/felipevalboeno/assets/66a6180288490922e42acfc27b690577b1f9060a/erp.jpg" />              
+<img align="center" alt="Feltex-html" height="50" width="50" src="https://raw.githubusercontent.com/felipevalboeno/assets/66a6180288490922e42acfc27b690577b1f9060a/logo-bpm.png" />              
 </div>  
 
-## 📊 GitHub Stats
-
+## 
 ![Felipe's GitHub stats](https://github-readme-stats.vercel.app/api?username=felipevalboeno&show_icons=true&theme=tokyonight)
 
-## 🐍 Snake eating my contributions
-
+🐍 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/felipevalboeno/felipevalboeno/output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/felipevalboeno/felipevalboeno/output/github-contribution-grid-snake.svg" />
@@ -50,12 +55,6 @@ Além da tecnologia, gosto de me dedicar a hobbies que estimulam criatividade e 
 - 🎮 Jogos no PS5
 
 Acredito que manter o equilíbrio entre a vida pessoal e profissional é essencial para uma carreira sustentável e criativa.
-
-## 📫 Como me encontrar
-- Email: felipevalboeno@hotmail.com
-<div>
-  <a href="https://www.linkedin.com/in/fvalboeno/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-</div>
 
 ## 📁 Meu MKDOCS site
 <a href="https://felipevalboeno.github.io/felipevalboeno/" target="_blank">
