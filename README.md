@@ -17,31 +17,41 @@ Sou desenvolvedor Java com foco em aplicações Java, Spring Boot, APIs RESTful 
 
 
 
+
 ## 🚀 Tecnologias e ferramentas que uso
-<div style="display: inline_block"><br>
-<img align="center" alt="Feltex-Java" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
-<img align="center" alt="Feltex-Spring" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" />
-<img align="center" alt="Feltex-github" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubcodespaces/githubcodespaces-original.svg" />
-<img align="center" alt="Feltex-gitlab" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" />
-<img align="center" alt="Feltex-mysql" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
-<img align="center" alt="Feltex-html" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-<img align="center" alt="Feltex-html" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hibernate/hibernate-original-wordmark.svg" />
-<img align="center" alt="Feltex-html" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" /> 
-<img align="center" alt="Feltex-html" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg" /> 
-<img align="center" alt="Feltex-html" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original-wordmark.svg" />
-<img align="center" alt="Feltex-html" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg" /> 
-<img align="center" alt="Feltex-html" height="50" width="50" src="https://raw.githubusercontent.com/felipevalboeno/assets/66a6180288490922e42acfc27b690577b1f9060a/erp.jpg" />              
-<img align="center" alt="Feltex-html" height="50" width="50" src="https://raw.githubusercontent.com/felipevalboeno/assets/66a6180288490922e42acfc27b690577b1f9060a/logo-bpm.png" />              
-</div>  
+<table>
+  <tr >
+    <td>
+      <div style="display: inline_block" >
+        <img align="center" alt="Feltex-Java" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+        <img align="center" alt="Feltex-Spring" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" />
+        <img align="center" alt="Feltex-github" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubcodespaces/githubcodespaces-original.svg" />
+        <img align="center" alt="Feltex-gitlab" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" />
+        <img align="center" alt="Feltex-mysql" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+        <img align="center" alt="Feltex-html" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+        <img align="center" alt="Feltex-hibernate" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hibernate/hibernate-original-wordmark.svg" />
+        <img align="center" alt="Feltex-photoshop" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" /> 
+        <img align="center" alt="Feltex-notion" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg" /> 
+        <img align="center" alt="Feltex-grafana" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original-wordmark.svg" />
+        <img align="center" alt="Feltex-eclipse" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg" /> 
+        <img align="center" alt="Feltex-erp" height="50" width="50" src="https://raw.githubusercontent.com/felipevalboeno/assets/66a6180288490922e42acfc27b690577b1f9060a/erp.jpg" />              
+        <img align="center" alt="Feltex-bpm" height="50" width="50" src="https://raw.githubusercontent.com/felipevalboeno/assets/66a6180288490922e42acfc27b690577b1f9060a/logo-bpm.png" />              
+      </div>
+    </td>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api?username=felipevalboeno&show_icons=true&theme=tokyonight" alt="Felipe's GitHub stats" />
+    </td>
+  </tr>
+</table>
 
-## 
-![Felipe's GitHub stats](https://github-readme-stats.vercel.app/api?username=felipevalboeno&show_icons=true&theme=tokyonight)
 
-<picture>
+<div align="center">
+<picture >
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/felipevalboeno/felipevalboeno/output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/felipevalboeno/felipevalboeno/output/github-contribution-grid-snake.svg" />
   <img alt="github-snake" src="https://raw.githubusercontent.com/felipevalboeno/felipevalboeno/output/github-contribution-grid-snake.svg" />
 </picture>
+</div>
 
 
 ## 📌 Projetos em destaque
