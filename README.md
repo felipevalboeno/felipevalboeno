@@ -71,7 +71,12 @@ Acredito que manter o equilíbrio entre a vida pessoal e profissional é essenci
 
 
 ##
-[![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=nord&border=true)](https://github.com/piyushsuthar/github-readme-quotes)
+<div align="center">
+  <a href="https://github.com/piyushsuthar/github-readme-quotes" target="_blank">
+    <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=nord&border=true" alt="Readme Quotes" />
+  </a>
+</div>
+
 
 #
 ![Visualizações de perfil](https://komarev.com/ghpvc/?username=felipevalboeno&label=Visualiza%C3%A7%C3%B5es&color=0e75b6&style=flat)
