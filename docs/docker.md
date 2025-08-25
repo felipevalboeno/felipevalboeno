@@ -15,7 +15,7 @@ This avoids the famous “it works on my machine”, because the container runs 
 You have a system in Java 17 + PostgreSQL 14.
 With Docker, you package this into a container and run it on any machine without manually installing the JDK or PostgreSQL.
 
-⚙️ What is Docker Compose?
+# ⚙️ What is Docker Compose?
 
 ![Docker Compose](assets/Docker/docker3.png)
 
@@ -38,6 +38,7 @@ A container with pgAdmin (to manage the database).
 
 Instead of running each one separately, the docker-compose.yml brings everything up at once, already configured.
 
+
 # Advantages for Java development
 
 Standardized environment – you don’t need to install JDK, database, Redis, etc. Everything comes ready in the container.
@@ -49,6 +50,7 @@ Isolation – different projects can use different Java versions without conflic
 Disposable database – for testing, you can spin up a PostgreSQL container, experiment, and then remove it without leaving a mess.
 
 Easy integration – with Docker Compose you can simulate the whole application ecosystem (Java + database + messaging, etc.).
+
 
 #  In summary:
 
