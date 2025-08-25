@@ -1,6 +1,6 @@
 #  🐳 What is Docker?
 
-![Docker](assets-docker/docker1.png)
+![Docker](assets-Docker/docker1.png)
 
 Docker is a platform that allows you to run applications inside containers.
 
@@ -9,7 +9,7 @@ Container = a small isolated box that contains everything your application needs
 This avoids the famous “it works on my machine”, because the container runs the same way in any environment (on your PC, on a server, or in the cloud).
 
 
-![Docker Container](assets-docker/docker2.png)
+![Docker Container](assets-Docker/docker2.png)
 
 #  Practical example:
 You have a system in Java 17 + PostgreSQL 14.
@@ -17,7 +17,7 @@ With Docker, you package this into a container and run it on any machine without
 
 ⚙️ What is Docker Compose?
 
-![Docker Compose](assets-docker/docker3.png)
+![Docker Compose](assets-Docker/docker3.png)
 
 Docker Compose is a tool that makes it easier when you need to run multiple containers together.
 
@@ -25,7 +25,7 @@ You describe everything in a docker-compose.yml file.
 
 One command docker compose up starts all the services at once.
 
-![Docker Compose x Docker](assets-docker/docker4.png)
+![Docker Compose x Docker](assets-Docker/docker4.png)
 
 #  Practical example:
 Your Java system needs:
