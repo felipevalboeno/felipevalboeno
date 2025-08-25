@@ -15,6 +15,8 @@ theme:
 nav:
   - Home: index.md
   - Sobre mim: about.md
+  - Base de Conhecimento:
+      - Docker: docker.md 
 
 
 extra_css:

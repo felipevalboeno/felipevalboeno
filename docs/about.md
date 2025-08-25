@@ -3,10 +3,10 @@ Sou desenvolvedor Java com foco em aplicações Spring Boot, APIs RESTful e inte
 
 ## 🚀 Tecnologias que uso
 - Java | Spring Boot | JPA | Hibernate
-- JavaScript | Node.js | React (se usar)
+- JavaScript |
 - Git | GitHub | GitLab
 - SQL | MySQL | PostgreSQL
-- BPMN e ERP's.
+- BPMN, Docker, Grafana
 
 ## 📌 Projetos em destaque
 - [Projeto SpringBoot](https://github.com/felipevalboeno/workshop-springboot4-jpa){:target="_blank"}: Trata-se de um projeto de prática e estudo das tecnologias SpringBoot, JPA/Hibernate utilizando o banco de dados em memória H2 para os testes.
