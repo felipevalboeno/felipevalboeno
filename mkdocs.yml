@@ -16,7 +16,6 @@ nav:
   - Home: index.md
   - Sobre mim: about.md
   - Base de Conhecimento:
-      - Index: indexbase.md
       - Docker: docker.md 
 
 
