@@ -56,6 +56,7 @@ Sou desenvolvedor Java com foco em aplicações Java, Spring Boot, APIs RESTful 
 ## 📌 Projetos em destaque
 - [Projeto SpringBoot](https://github.com/felipevalboeno/workshop-springboot4-jpa): Trata-se de um projeto de prática e estudo das tecnologias SpringBoot, JPA/Hibernate utilizando o banco de dados em memória H2 para os testes.
 - [API de Produtos](https://github.com/felipevalboeno/workshop-backend-restfull): Trata-se de um projeto base de CRUD completo com SpringBoot feito no vsCode. Muito útil para iniciantes terem uma base de CRUD no padrão MVC com Spring.
+- [Angular: Gerador de certificados](https://github.com/felipevalboeno/ProjectRCKTS-Angular-Certificate-Generator):Criei um gerador de certificado em Angular, com funcionalidade de download. Nele, você preenche o nome, os cursos desenvolvidos, e cria um layout de um certificado de conclusão. Pode ser testado tanto em desktop como em mobile.
 
 ## 🏢 Empresas onde já atuei
 - **Paschoalotto** – Estagiário de MIS (Sistemas de Informações Gerenciais)
