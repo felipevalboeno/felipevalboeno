@@ -23,3 +23,25 @@
   display: none !important;
 }
 */
+
+
+/* Alert boxes do Material */
+.md-typeset .admonition-info {
+  background-color: #f0fff4;
+  border-left: 4px solid #32cd32; /* verde */
+}
+
+.md-typeset .admonition-success {
+  background-color: #f0f9ff;
+  border-left: 4px solid #00bfff; /* azul */
+}
+
+.md-typeset .admonition-warning {
+  background-color: #fffaf0;
+  border-left: 4px solid #ffa500; /* laranja */
+}
+
+.md-typeset .admonition-danger {
+  background-color: #fff0f0;
+  border-left: 4px solid #ff4500; /* vermelho */
+}
