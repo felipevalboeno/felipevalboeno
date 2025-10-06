@@ -16,7 +16,8 @@ nav:
   - Home: index.md
   - Sobre mim: about.md
   - Base de Conhecimento:
-      - Docker: docker.md 
+      - Docker: docker.md
+      - API Quick Reference: api.md 
 
 
 extra_css:
