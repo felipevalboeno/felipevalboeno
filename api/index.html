@@ -456,9 +456,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#http-status-code" class="md-nav__link">
+  <a href="#http-status-codes" class="md-nav__link">
     <span class="md-ellipsis">
-      ✨ HTTP Status Code
+      ✨ HTTP Status Codes
     </span>
   </a>
   
@@ -570,9 +570,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#http-status-code" class="md-nav__link">
+  <a href="#http-status-codes" class="md-nav__link">
     <span class="md-ellipsis">
-      ✨ HTTP Status Code
+      ✨ HTTP Status Codes
     </span>
   </a>
   
@@ -648,72 +648,137 @@
 
 
 
-<h1 id="api-quick-reference"><span style="color:lime; font-weight:bold;">🌿 API Quick Reference</span></h1>
-<h2 id="http-verbs"><span style="color:hotpink; font-weight:bold;">✨ HTTP Verbs</span></h2>
-<p>➜ <span style="color:orange;">GET:</span> Retriev data from the server.</p>
-<p>➜ <span style="color:orange;">POST:</span> Send data to the server to create a resource.</p>
-<p>➜ <span style="color:orange;">PUT:</span> Send data to the server to update a resource.</p>
-<p>➜ <span style="color:orange;">DELETE:</span> Delete a resource from the server.</p>
-<p>➜ <span style="color:orange;">PATCH:</span> Send data to the server to update a resource partially.</p>
-<p>➜ <span style="color:orange;">TRACE:</span> Returns the full HTTP Request received by the server for debugging and diagnostic purposes.</p>
-<p>➜ <span style="color:orange;">OPTIONS:</span> Returns the http methods supported by the server for the request URL.</p>
-<p>➜ <span style="color:orange;">CONNECT:</span> Converts the request connection to a transparent TCP/IP tunnel for secure communication.</p>
-<p>➜ <span style="color:orange;">PURGE:</span> Invalidade a cached resource.</p>
-<p>➜ <span style="color:orange;">LOCK:</span> Locks the resource for exclusive use by the client.</p>
-<p>➜ <span style="color:orange;">UNLOCK:</span> Unlock the resource previously locked by the client.</p>
-<p>➜ <span style="color:orange;">MKCOL:</span> Creates a new collection resource.</p>
-<p>➜ <span style="color:orange;">COPY:</span> Copies the resource identified by the request-URI to the destination URI.</p>
-<h2 id="http-status-code"><span style="color:hotpink; font-weight:bold;">✨ HTTP Status Code</span></h2>
-<p>➜ <span style="color:orange;">100:</span> Informational.</p>
-<p>➜ <span style="color:orange;">200:</span> Success.</p>
-<p>➜ <span style="color:orange;">300:</span> Redirection.</p>
-<p>➜ <span style="color:orange;">400:</span> Client errors.</p>
-<p>➜ <span style="color:orange;">500:</span> Server errors.</p>
-<h2 id="response-headers"><span style="color:hotpink; font-weight:bold;">✨ Response Headers </span></h2>
-<p>➜ <span style="color:orange;">Content-type:</span> Specifies the MIME type of the data in the response body.</p>
-<p>➜ <span style="color:orange;">Content-lenght:</span> Specifies the lenght of the response body in bytes.</p>
-<p>➜ <span style="color:orange;">Cache-control:</span> Specifies the caching behavior of the response.</p>
-<p>➜ <span style="color:orange;">Location:</span> Specifies the URI of a resource that can be used to retrieve the request resource.</p>
-<p>➜ <span style="color:orange;">Server:</span> Specifies the name and version of the server software that generated the response.</p>
-<p>➜ <span style="color:orange;">Access-control-allow-origin:</span> Specifies which origins are allowed to access the resource.</p>
-<p>➜ <span style="color:orange;">Set-cookie:</span> Specifies a cookie that should be stored by the client and sent back to the server with future requests.</p>
-<p>➜ <span style="color:orange;">Expires:</span> Specified the date and time after which the response is considered stale.</p>
-<p>➜ <span style="color:orange;">Last-modified:</span> Specified the date and time that the resource was last modified.</p>
-<h2 id="api-design"><span style="color:hotpink; font-weight:bold;">✨ API Design </span></h2>
-<p>➜ <span style="color:orange;">REST:</span> Representational State Transfer, a design pattern for building web services.</p>
-<p>➜ <span style="color:orange;">SOAP:</span> Simple Object Access Protocol, a messaging protocol for excharging structured data.</p>
-<p>➜ <span style="color:orange;">GraphSQL:</span> A query language and runtime for building APIs.</p>
-<p>➜ <span style="color:orange;">API Gateway:</span> A service that manages protects and scales APIs.</p>
-<h2 id="api-architectures"><span style="color:hotpink; font-weight:bold;">✨ API Architectures </span></h2>
-<p>➜ <span style="color:orange;">SOA:</span> Service-Oriented Architectures, an architectures style for building distributed system.</p>
-<p>➜ <span style="color:orange;">Microservices:</span> An architectural style for building complex applications as a suit of small independent services.</p>
-<p>➜ <span style="color:orange;">Serverless:</span> A cloud computing execution model where the cloud provider manages the infrastructure and automatically allocate resources as needed.</p>
-<p>➜ <span style="color:orange;">Event-Driven:</span> An architectural style where the flow of data between components is triggered by events.</p>
-<p>➜ <span style="color:orange;">RESTFULL API:</span> An architectural style that uses HTTP requests to GET, POST, PUT, and DELETE data.</p>
-<h2 id="api-design-patterns"><span style="color:hotpink; font-weight:bold;">✨ API Design Patterns </span></h2>
-<p>➜ <span style="color:orange;">Adapter Pattern:</span> A pattern that converts the interface of a class into another interface that clients expect.</p>
-<p>➜ <span style="color:orange;">Decorator Pattern:</span> A pattern that adds behaviors to an individual object dynamically.</p>
-<p>➜ <span style="color:orange;">Proxy Pattern:</span> A pattern that provides a surrogate or placeholder for another object to control access to it.</p>
-<p>➜ <span style="color:orange;">Chain of responsibility Pattern:</span> A pattern that delegates commands to a chain of processing objects.</p>
-<p>➜ <span style="color:orange;">Observer Pattern:</span> A pattern that define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.</p>
-<h2 id="api-security"><span style="color:hotpink; font-weight:bold;">✨ API Security </span></h2>
-<p>➜ <span style="color:orange;">OAuth:</span> An open standard for authorization used for protecting APIs.</p>
-<p>➜ <span style="color:orange;">JWT:</span> JSON Web Tokens, a startard  for securely transmitting information between parties asas JSON object.</p>
-<p>➜ <span style="color:orange;">SSL/TLS:</span> Secure Sockets Layer / Transport Layers Security, a protocol for estabilishing a secure connection between a client and a server.</p>
-<p>➜ <span style="color:orange;">API Key:</span> A secret token used to limit the numbers of requests that can be made to an API over a specific period of time.</p>
-<p>➜ <span style="color:orange;">OpenID Connect:</span> An authentication layer built on top of OAuth that allows users to be authenticated across multiple domains.</p>
-<p>➜ <span style="color:orange;">Cross-Orign Resource Sharing (CORS):</span> A mechanism that allows many Resources(eg, fonts, javascripts, etc.) on a web page to be requested from another domain outside the domain from which the resource originated.</p>
-<h2 id="api-testing"><span style="color:hotpink; font-weight:bold;">✨ API Testing </span></h2>
-<p>➜ <span style="color:orange;">Postman:</span> A popular tool for testing and debugging APIs.</p>
-<p>➜ <span style="color:orange;">SoapUI:</span> A tool for testing SOAP and REST web services.</p>
-<p>➜ <span style="color:orange;">Swagger:</span> A tool for designing, building and testing APIs.</p>
-<p>➜ <span style="color:orange;">JMeter:</span> A tool for testing the performance of APIs.</p>
-<p>➜ <span style="color:orange;">TestRail:</span> A teste management tool for planning, executing, and tracking API tests.</p>
-<p>➜ <span style="color:orange;">Dreed:</span>  A command-line tool for testing API documentation against its Backend implementation.</p>
-<p>➜ <span style="color:orange;">REST Assured:</span> A Java-based library for testing RestFull APIs.</p>
-<p>➜ <span style="color:orange;">Karate DSL:</span> A testing framework for API testing using gherkin syntax.</p>
-<p>➜ <span style="color:orange;">HttpMaster:</span> A tool for testing and debugging APIs.</p>
-<p>➜ <span style="color:orange;">Assertible:</span> A tool for testing and monitoring APIs with automated tests.</p>
+<h1 id="api-quick-reference">🌿 API Quick Reference</h1>
+<hr />
+<h2 id="http-verbs">✨ HTTP Verbs</h2>
+<p>!!! info "GET"
+    🟠 <strong>GET:</strong> Retrieve data from the server.</p>
+<p>!!! success "POST"
+    🟢 <strong>POST:</strong> Send data to the server to create a resource.</p>
+<p>!!! warning "PUT"
+    🔵 <strong>PUT:</strong> Send data to the server to update a resource.</p>
+<p>!!! danger "DELETE"
+    🔴 <strong>DELETE:</strong> Delete a resource from the server.</p>
+<p>!!! info "PATCH"
+    🟠 <strong>PATCH:</strong> Send data to the server to update a resource partially.</p>
+<p>!!! info "TRACE"
+    🟠 <strong>TRACE:</strong> Returns the full HTTP Request received by the server for debugging.</p>
+<p>!!! info "OPTIONS"
+    🟠 <strong>OPTIONS:</strong> Returns the HTTP methods supported by the server for the request URL.</p>
+<p>!!! info "CONNECT"
+    🟠 <strong>CONNECT:</strong> Converts the request connection to a transparent TCP/IP tunnel for secure communication.</p>
+<p>!!! warning "PURGE"
+    🟡 <strong>PURGE:</strong> Invalidates a cached resource.</p>
+<p>!!! warning "LOCK"
+    🟡 <strong>LOCK:</strong> Locks the resource for exclusive use by the client.</p>
+<p>!!! warning "UNLOCK"
+    🟡 <strong>UNLOCK:</strong> Unlocks the resource previously locked by the client.</p>
+<p>!!! info "MKCOL"
+    🟠 <strong>MKCOL:</strong> Creates a new collection resource.</p>
+<p>!!! info "COPY"
+    🟠 <strong>COPY:</strong> Copies the resource identified by the request-URI to the destination URI.</p>
+<hr />
+<h2 id="http-status-codes">✨ HTTP Status Codes</h2>
+<p>!!! info "Informational"
+    - <strong>100:</strong> Informational.</p>
+<p>!!! success "Success"
+    - <strong>200:</strong> Success.</p>
+<p>!!! warning "Redirection"
+    - <strong>300:</strong> Redirection.</p>
+<p>!!! danger "Client Errors"
+    - <strong>400:</strong> Client errors.</p>
+<p>!!! danger "Server Errors"
+    - <strong>500:</strong> Server errors.</p>
+<hr />
+<h2 id="response-headers">✨ Response Headers</h2>
+<p>!!! info "Content-type"
+    🟠 <strong>Content-type:</strong> Specifies the MIME type of the data in the response body.</p>
+<p>!!! info "Content-length"
+    🟠 <strong>Content-length:</strong> Specifies the length of the response body in bytes.</p>
+<p>!!! info "Cache-control"
+    🟠 <strong>Cache-control:</strong> Specifies the caching behavior of the response.</p>
+<p>!!! info "Location"
+    🟠 <strong>Location:</strong> Specifies the URI of a resource to retrieve the request resource.</p>
+<p>!!! info "Server"
+    🟠 <strong>Server:</strong> Name and version of the server software generating the response.</p>
+<p>!!! info "Access-control-allow-origin"
+    🟠 <strong>Access-control-allow-origin:</strong> Which origins are allowed to access the resource.</p>
+<p>!!! info "Set-cookie"
+    🟠 <strong>Set-cookie:</strong> Specifies a cookie to be stored by the client and sent back with future requests.</p>
+<p>!!! info "Expires"
+    🟠 <strong>Expires:</strong> Date/time after which the response is considered stale.</p>
+<p>!!! info "Last-modified"
+    🟠 <strong>Last-modified:</strong> Date/time that the resource was last modified.</p>
+<hr />
+<h2 id="api-design">✨ API Design</h2>
+<p>!!! info "REST"
+    🟠 <strong>REST:</strong> Representational State Transfer, a design pattern for building web services.</p>
+<p>!!! info "SOAP"
+    🟠 <strong>SOAP:</strong> Simple Object Access Protocol, a messaging protocol for exchanging structured data.</p>
+<p>!!! info "GraphQL"
+    🟠 <strong>GraphQL:</strong> A query language and runtime for building APIs.</p>
+<p>!!! info "API Gateway"
+    🟠 <strong>API Gateway:</strong> A service that manages, protects, and scales APIs.</p>
+<hr />
+<h2 id="api-architectures">✨ API Architectures</h2>
+<p>!!! info "SOA"
+    🟠 <strong>SOA:</strong> Service-Oriented Architecture, a style for building distributed systems.</p>
+<p>!!! info "Microservices"
+    🟠 <strong>Microservices:</strong> An architectural style for building applications as a suite of small independent services.</p>
+<p>!!! info "Serverless"
+    🟠 <strong>Serverless:</strong> Cloud execution model where the provider manages infrastructure and resources automatically.</p>
+<p>!!! info "Event-Driven"
+    🟠 <strong>Event-Driven:</strong> Flow of data between components is triggered by events.</p>
+<p>!!! info "RESTful API"
+    🟠 <strong>RESTful API:</strong> Uses HTTP requests to GET, POST, PUT, and DELETE data.</p>
+<hr />
+<h2 id="api-design-patterns">✨ API Design Patterns</h2>
+<p>!!! info "Adapter Pattern"
+    🟠 <strong>Adapter Pattern:</strong> Converts the interface of a class into another interface that clients expect.</p>
+<p>!!! info "Decorator Pattern"
+    🟠 <strong>Decorator Pattern:</strong> Adds behaviors to an individual object dynamically.</p>
+<p>!!! info "Proxy Pattern"
+    🟠 <strong>Proxy Pattern:</strong> Provides a surrogate or placeholder to control access to another object.</p>
+<p>!!! info "Chain of Responsibility"
+    🟠 <strong>Chain of Responsibility Pattern:</strong> Delegates commands to a chain of processing objects.</p>
+<p>!!! info "Observer Pattern"
+    🟠 <strong>Observer Pattern:</strong> Defines a one-to-many dependency between objects; dependents update automatically when the object changes.</p>
+<hr />
+<h2 id="api-security">✨ API Security</h2>
+<p>!!! info "OAuth"
+    🟠 <strong>OAuth:</strong> Open standard for authorization used for protecting APIs.</p>
+<p>!!! info "JWT"
+    🟠 <strong>JWT:</strong> JSON Web Tokens, a standard for securely transmitting information between parties.</p>
+<p>!!! info "SSL/TLS"
+    🟠 <strong>SSL/TLS:</strong> Protocol for establishing a secure connection between client and server.</p>
+<p>!!! info "API Key"
+    🟠 <strong>API Key:</strong> Secret token limiting requests to an API over a period.</p>
+<p>!!! info "OpenID Connect"
+    🟠 <strong>OpenID Connect:</strong> Authentication layer on top of OAuth for multi-domain user auth.</p>
+<p>!!! info "CORS"
+    🟠 <strong>Cross-Origin Resource Sharing (CORS):</strong> Allows resources on a webpage to be requested from another domain.</p>
+<hr />
+<h2 id="api-testing">✨ API Testing</h2>
+<p>!!! info "Postman"
+    🟠 <strong>Postman:</strong> Popular tool for testing and debugging APIs.</p>
+<p>!!! info "SoapUI"
+    🟠 <strong>SoapUI:</strong> Tool for testing SOAP and REST web services.</p>
+<p>!!! info "Swagger"
+    🟠 <strong>Swagger:</strong> Tool for designing, building, and testing APIs.</p>
+<p>!!! info "JMeter"
+    🟠 <strong>JMeter:</strong> Tool for testing API performance.</p>
+<p>!!! info "TestRail"
+    🟠 <strong>TestRail:</strong> Test management tool for planning, executing, and tracking API tests.</p>
+<p>!!! info "Dredd"
+    🟠 <strong>Dredd:</strong> Command-line tool for testing API documentation against backend implementation.</p>
+<p>!!! info "REST Assured"
+    🟠 <strong>REST Assured:</strong> Java-based library for testing RESTful APIs.</p>
+<p>!!! info "Karate DSL"
+    🟠 <strong>Karate DSL:</strong> Testing framework for APIs using Gherkin syntax.</p>
+<p>!!! info "HttpMaster"
+    🟠 <strong>HttpMaster:</strong> Tool for testing and debugging APIs.</p>
+<p>!!! info "Assertible"
+    🟠 <strong>Assertible:</strong> Tool for testing and monitoring APIs with automated tests.</p>
 
 
 
