@@ -1,8 +1,17 @@
 [![Português](https://img.shields.io/badge/lang-Português-brightgreen?style=flat-square&logo=github)](README.md) [![English](https://img.shields.io/badge/lang-English-blue?style=flat-square&logo=github)](README-en.md)
 
+<table border="0" style="border-collapse: collapse;">
+  <tr>
+    <td width="150" style="border: none;">
+      <img src="https://github.com/felipevalboeno/assets/raw/main/coffee2.png" width="150" />
+    </td>
+    <td style="border: none; vertical-align: middle;">
+      <h1>👋 Olá, eu sou o Felipe Valboeno!</h1>
+      <p>Sou desenvolvedor Java com foco em aplicações Java, Spring Boot, APIs RESTful e integração com banco de dados. Apaixonado por aprender novas tecnologias e resolver problemas com código limpo e bem estruturado.</p>
+    </td>
+  </tr>
+</table>
 
-# 👋 Olá, eu sou o Felipe Valboeno!
-Sou desenvolvedor Java com foco em aplicações Java, Spring Boot, APIs RESTful e integração com banco de dados. Apaixonado por aprender novas tecnologias e resolver problemas com código limpo e bem estruturado.
 
 <p>
   <a href="mailto:felipevalboeno@gmail.com" target="_blank" style="text-decoration:none;"><img src="https://img.shields.io/badge/Email-felipevalboeno@gmail.com-blue?style=for-the-badge&logo=gmail&logoColor=white"></a>
