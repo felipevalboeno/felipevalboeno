@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../about/">
+        <link rel="prev" href="../api/">
       
-      
-        <link rel="next" href="../api/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>Docker - Felipe Valboeno - MkDocs</title>
+        <title>API Quick Reference - Felipe Valboeno - MkDocs</title>
       
     
     
@@ -74,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-is-docker" class="md-skip">
+        <a href="#getting-in-touch" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic" style=" background:#479bad">
           <span class="md-ellipsis">
             
-              Docker
+              API Quick Reference
             
           </span>
         </div>
@@ -235,7 +233,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../docker/" class="md-tabs__link">
           
   
   
@@ -377,19 +375,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../docker/" class="md-nav__link">
         
   
   
@@ -400,7 +389,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -433,10 +421,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../links/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -447,6 +444,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -475,38 +473,13 @@
 
 
 
-<h1 id="what-is-docker">🐳 What is Docker?</h1>
-<p><img alt="Docker" src="../assets/Docker/docker1.png" /></p>
-<p>Docker is a platform that allows you to run applications inside containers.</p>
-<p>Container = a small isolated box that contains everything your application needs to work (Java, database, libraries, lightweight operating system).</p>
-<p>This avoids the famous “it works on my machine”, because the container runs the same way in any environment (on your PC, on a server, or in the cloud).</p>
-<p><img alt="Docker Container" src="../assets/Docker/docker2.png" /></p>
-<h1 id="practical-example">Practical example:</h1>
-<p>You have a system in Java 17 + PostgreSQL 14.
-With Docker, you package this into a container and run it on any machine without manually installing the JDK or PostgreSQL.</p>
-<h1 id="what-is-docker-compose">⚙️ What is Docker Compose?</h1>
-<p><img alt="Docker Compose" src="../assets/Docker/docker3.png" /></p>
-<p>Docker Compose is a tool that makes it easier when you need to run multiple containers together.</p>
-<p>You describe everything in a docker-compose.yml file.</p>
-<p>One command docker compose up starts all the services at once.</p>
-<p><img alt="Docker Compose x Docker" src="../assets/Docker/docker4.png" /></p>
-<h1 id="practical-example_1">Practical example:</h1>
-<p>Your Java system needs:</p>
-<p>A container with your Java application (Spring Boot, for example).</p>
-<p>A container with PostgreSQL.</p>
-<p>A container with pgAdmin (to manage the database).</p>
-<p>Instead of running each one separately, the docker-compose.yml brings everything up at once, already configured.</p>
-<h1 id="advantages-for-java-development">Advantages for Java development</h1>
-<p>Standardized environment – you don’t need to install JDK, database, Redis, etc. Everything comes ready in the container.</p>
-<p>Agility – with just a few commands, your project runs the same on any machine (dev, test, production).</p>
-<p>Isolation – different projects can use different Java versions without conflict.</p>
-<p>Disposable database – for testing, you can spin up a PostgreSQL container, experiment, and then remove it without leaving a mess.</p>
-<p>Easy integration – with Docker Compose you can simulate the whole application ecosystem (Java + database + messaging, etc.).</p>
-<h1 id="in-summary">In summary:</h1>
-<p>Docker = runs your application in isolated little boxes.</p>
-<p>Docker Compose = orchestrates multiple little boxes at the same time.</p>
-<p>For Java = less environment headache, more speed, and consistency from dev → staging → production.</p>
-<p>Quer que eu também adapte essa tradução para um tom mais corporate/professional (tipo explicação para entrevista ou LinkedIn), ou manter nesse tom simples e didático?</p>
+<p><img alt="Perfil" class="avatar" src="../assets/logo.png" /></p>
+<h1 id="getting-in-touch">👋 Getting in touch!</h1>
+<p><a href="https://github.com/felipevalboeno"><img alt="GitHub" src="https://img.shields.io/badge/-GitHub-000000?style=for-the-badge&amp;logo=github&amp;logoColor=white" /></a>
+<a href="https://www.linkedin.com/in/fvalboeno/"><img alt="LinkedIn" src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" /></a></p>
+<hr />
+<p><strong>Felie Valboeno</strong><br />
+Java Developer</p>
 
 
 
