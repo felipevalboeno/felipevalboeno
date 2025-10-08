@@ -11,13 +11,10 @@
 
 
 <p align="center">
-  <img src="https://github.com/felipevalboeno/assets/raw/main/coffee2.png" width="650" />
+  <img src="https://github.com/felipevalboeno/assets/raw/main/coffee2.png" width="400" />
 </p>
 
-<table border="0" style="border-collapse: collapse;">
-  <tr>
-    <td style="border: none; vertical-align: middle;">
-      <h1>👋 Olá, eu sou o Felipe Valboeno!</h1>
+  <h1>👋 Olá, eu sou o Felipe Valboeno!</h1>
       <p>Sou desenvolvedor Java com foco em aplicações Java, Spring Boot, APIs RESTful e integração com banco de dados. Apaixonado por aprender novas tecnologias e resolver problemas com código limpo e bem estruturado.</p>
       <p> Vamos conversar?</p>
      <p style="display: flex; gap: 15px; align-items: center; padding: 10px 15px; border-radius: 8px; width: fit-content;">
@@ -28,9 +25,7 @@
     <img src="https://github.com/felipevalboeno/assets/blob/main/linkedin.png" alt="LinkedIn" width="24" height="24" ">
   </a>
 </p>
-    </td>
-  </tr>
-</table>
+
 
 
 <p align="center">
