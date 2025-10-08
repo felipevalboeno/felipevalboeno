@@ -47,12 +47,12 @@
         <img align="center" alt="Feltex-notion" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg" /> 
         <img align="center" alt="Feltex-grafana" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original-wordmark.svg" />
         <img align="center" alt="Feltex-eclipse" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg" /> 
-        <img align="center" alt="Feltex-erp" height="50" width="50" src="https://raw.githubusercontent.com/felipevalboeno/assets/66a6180288490922e42acfc27b690577b1f9060a/erp.jpg" />              
+        <img align="center" alt="Feltex-erp" height="50" width="45" src="https://raw.githubusercontent.com/felipevalboeno/assets/66a6180288490922e42acfc27b690577b1f9060a/erp.jpg" />              
         <img align="center" alt="Feltex-bpm" height="50" width="50" src="https://raw.githubusercontent.com/felipevalboeno/assets/66a6180288490922e42acfc27b690577b1f9060a/logo-bpm.png" /> 
         <img align="center" alt="Feltex-bpm" height="50" width="50" src="https://github.com/felipevalboeno/assets/blob/main/angular.png"/> 
         <img align="center" alt="Feltex-bpm" height="50" width="50" src="https://github.com/felipevalboeno/assets/blob/main/thymeleaf.png"/> 
         <img align="center" alt="Feltex-bpm" height="50" width="50" src="https://github.com/felipevalboeno/assets/blob/main/tailwind.png"/> 
-        <img align="center" alt="Feltex-bpm" height="50" width="50" src="https://github.com/felipevalboeno/assets/blob/main/RDS.png"/> 
+        <img align="center" alt="Feltex-bpm" height="50" width="45" src="https://github.com/felipevalboeno/assets/blob/main/RDS.png"/> 
       </div>
     </td>
     <td>
