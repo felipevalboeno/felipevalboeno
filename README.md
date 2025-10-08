@@ -1,6 +1,26 @@
-[![Português](https://img.shields.io/badge/lang-Português-brightgreen?style=flat-square&logo=github)](README.md) [![English](https://img.shields.io/badge/lang-English-blue?style=flat-square&logo=github)](README-en.md)
 
-<p style="display: flex; gap: 15px; align-items: center; padding: 10px 15px; border-radius: 8px; width: fit-content;">
+<p align="center">
+  <a href="README.md">
+    <img src="https://img.shields.io/badge/lang-Português-brightgreen?style=flat-square&logo=github" alt="Português">
+  </a>
+  
+  <a href="README-en.md">
+    <img src="https://img.shields.io/badge/lang-English-blue?style=flat-square&logo=github" alt="English">
+  </a>
+</p>
+
+
+<p align="center">
+  <img src="https://github.com/felipevalboeno/assets/raw/main/coffee2.png" width="650" />
+</p>
+
+<table border="0" style="border-collapse: collapse;">
+  <tr>
+    <td style="border: none; vertical-align: middle;">
+      <h1>👋 Olá, eu sou o Felipe Valboeno!</h1>
+      <p>Sou desenvolvedor Java com foco em aplicações Java, Spring Boot, APIs RESTful e integração com banco de dados. Apaixonado por aprender novas tecnologias e resolver problemas com código limpo e bem estruturado.</p>
+      <p> Vamos conversar?</p>
+     <p style="display: flex; gap: 15px; align-items: center; padding: 10px 15px; border-radius: 8px; width: fit-content;">
   <a href="mailto:felipevalboeno@gmail.com" target="_blank" style="text-decoration: none;">
     <img src="https://github.com/felipevalboeno/assets/blob/main/gmail.png" alt="Email" width="24" height="24"  ">
   </a>
@@ -8,18 +28,6 @@
     <img src="https://github.com/felipevalboeno/assets/blob/main/linkedin.png" alt="LinkedIn" width="24" height="24" ">
   </a>
 </p>
-
-
-
-
-<table border="0" style="border-collapse: collapse;">
-  <tr>
-    <td width="150" style="border: none;">
-      <img src="https://github.com/felipevalboeno/assets/raw/main/coffee2.png" width="150" />
-    </td>
-    <td style="border: none; vertical-align: middle;">
-      <h1>👋 Olá, eu sou o Felipe Valboeno!</h1>
-      <p>Sou desenvolvedor Java com foco em aplicações Java, Spring Boot, APIs RESTful e integração com banco de dados. Apaixonado por aprender novas tecnologias e resolver problemas com código limpo e bem estruturado.</p>
     </td>
   </tr>
 </table>
@@ -32,7 +40,7 @@
 </p>
 
 
-## 🚀 Tecnologias e ferramentas que uso
+## ☕ Tech Stack
 <table>
   <tr >
     <td>
@@ -49,7 +57,10 @@
         <img align="center" alt="Feltex-grafana" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original-wordmark.svg" />
         <img align="center" alt="Feltex-eclipse" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg" /> 
         <img align="center" alt="Feltex-erp" height="50" width="50" src="https://raw.githubusercontent.com/felipevalboeno/assets/66a6180288490922e42acfc27b690577b1f9060a/erp.jpg" />              
-        <img align="center" alt="Feltex-bpm" height="50" width="50" src="https://raw.githubusercontent.com/felipevalboeno/assets/66a6180288490922e42acfc27b690577b1f9060a/logo-bpm.png" />              
+        <img align="center" alt="Feltex-bpm" height="50" width="50" src="https://raw.githubusercontent.com/felipevalboeno/assets/66a6180288490922e42acfc27b690577b1f9060a/logo-bpm.png" /> 
+        <img align="center" alt="Feltex-bpm" height="50" width="50" src="https://github.com/felipevalboeno/assets/blob/main/angular.png"/> 
+        <img align="center" alt="Feltex-bpm" height="50" width="50" src="https://github.com/felipevalboeno/assets/blob/main/thymeleaf.png"/> 
+        <img align="center" alt="Feltex-bpm" height="50" width="50" src="https://github.com/felipevalboeno/assets/blob/main/tailwind.png"/> 
       </div>
     </td>
     <td>
