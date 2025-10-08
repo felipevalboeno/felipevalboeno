@@ -14,8 +14,8 @@
   <img src="https://github.com/felipevalboeno/assets/raw/main/coffee3.png" width="500" />
 </p>
 
-  <h1>👋 Olá, eu sou o Felipe Valboeno!</h1>
-      <p>Sou desenvolvedor Java com foco em aplicações Java, Spring Boot, APIs RESTful e integração com banco de dados. Apaixonado por aprender novas tecnologias e resolver problemas com código limpo e bem estruturado.</p>
+  <h1>👋 Olá, bem vindo ao meu perfil!</h1>
+      <p>Sou desenvolvedor Java com foco em aplicações Java, Spring Boot, APIs RESTful e integração com banco de dados. Apaixonado por aprender novas tecnologias e resolver problemas com código limpo e bem estruturado. Explore meus projetos, ideias e experiências em desenvolvimento</p>
       <p> Vamos conversar?</p>
      <p style="display: flex; gap: 15px; align-items: center; padding: 10px 15px; border-radius: 8px; width: fit-content;">
   <a href="mailto:felipevalboeno@gmail.com" target="_blank" style="text-decoration: none;">
