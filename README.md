@@ -91,10 +91,11 @@ Além da tecnologia, gosto de me dedicar a hobbies que estimulam criatividade e 
 
 Acredito que manter o equilíbrio entre a vida pessoal e profissional é essencial para uma carreira sustentável e criativa.
 
-## 📁 Meu MKDOCS site
+## 📁 Meu MKDocs site
 <a href="https://felipevalboeno.github.io/felipevalboeno/" target="_blank">
-    <img src="https://img.shields.io/badge/-Ver%20o%20Site%20MkDocs-000000?style=for-the-badge&logo=readthedocs&logoColor=white">
-  </a>
+  <img src="https://img.shields.io/badge/-Ver%20o%20Site%20MkDocs-4CAF50?style=for-the-badge&logo=readthedocs&logoColor=white&colorA=80CBC4&colorB=8BC34A">
+</a>
+
 
 
 ##
