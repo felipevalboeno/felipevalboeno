@@ -1,5 +1,17 @@
 [![Português](https://img.shields.io/badge/lang-Português-brightgreen?style=flat-square&logo=github)](README.md) [![English](https://img.shields.io/badge/lang-English-blue?style=flat-square&logo=github)](README-en.md)
 
+<p style="display: flex; gap: 15px; align-items: center; padding: 10px 15px; border-radius: 8px; width: fit-content;">
+  <a href="mailto:felipevalboeno@gmail.com" target="_blank" style="text-decoration: none;">
+    <img src="https://github.com/felipevalboeno/assets/blob/main/gmail.png" alt="Email" width="24" height="24"  ">
+  </a>
+  <a href="https://www.linkedin.com/in/fvalboeno/" target="_blank" style="text-decoration: none;">
+    <img src="https://github.com/felipevalboeno/assets/blob/main/linkedin.png" alt="LinkedIn" width="24" height="24" ">
+  </a>
+</p>
+
+
+
+
 <table border="0" style="border-collapse: collapse;">
   <tr>
     <td width="150" style="border: none;">
@@ -11,12 +23,6 @@
     </td>
   </tr>
 </table>
-
-
-<p>
-  <a href="mailto:felipevalboeno@gmail.com" target="_blank" style="text-decoration:none;"><img src="https://img.shields.io/badge/Email-felipevalboeno@gmail.com-blue?style=for-the-badge&logo=gmail&logoColor=white"></a>
-  <a href="https://www.linkedin.com/in/fvalboeno/" target="_blank" style="text-decoration:none;"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-</p>
 
 
 <p align="center">
