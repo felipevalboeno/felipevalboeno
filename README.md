@@ -52,6 +52,7 @@
         <img align="center" alt="Feltex-bpm" height="50" width="50" src="https://github.com/felipevalboeno/assets/blob/main/angular.png"/> 
         <img align="center" alt="Feltex-bpm" height="50" width="50" src="https://github.com/felipevalboeno/assets/blob/main/thymeleaf.png"/> 
         <img align="center" alt="Feltex-bpm" height="50" width="50" src="https://github.com/felipevalboeno/assets/blob/main/tailwind.png"/> 
+        <img align="center" alt="Feltex-bpm" height="50" width="50" src="https://github.com/felipevalboeno/assets/blob/main/RDS.png"/> 
       </div>
     </td>
     <td>
