@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../solid/">
+        <link rel="prev" href="../gestaoVagas/">
       
-      
-        <link rel="next" href="../gerador/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>Gestão de Vagas - Felipe Valboeno - MkDocs</title>
+        <title>Gerador de Certificado - Felipe Valboeno - MkDocs</title>
       
     
     
@@ -73,11 +71,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#gestao-de-vagas-projeto-spring-boot" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -107,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic" style=" background:#479bad">
           <span class="md-ellipsis">
             
-              Gestão de Vagas
+              Gerador de Certificado
             
           </span>
         </div>
@@ -255,7 +248,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../gestaoVagas/" class="md-tabs__link">
           
   
   
@@ -518,32 +511,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Gestão de Vagas
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../gestaoVagas/" class="md-nav__link">
         
   
   
@@ -554,83 +525,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#demonstracao-do-projeto" class="md-nav__link">
-    <span class="md-ellipsis">
-      Demonstração do Projeto
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Demonstração do Projeto">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#boas-praticas-em-programacao-orientadaa-objetos-utilizadas-nesse-projeto" class="md-nav__link">
-    <span class="md-ellipsis">
-      Boas práticas em programação Orientadaa Objetos utilizadas nesse projeto
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ferramentas-de-monitoramento-utilizadas" class="md-nav__link">
-    <span class="md-ellipsis">
-      📈 Ferramentas de monitoramento utilizadas
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#docmentacao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Docmentação
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Docmentação">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      Endpoints:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -640,10 +534,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../gerador/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -654,6 +555,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -682,215 +584,9 @@
 
 
 
-<h1 id="gestao-de-vagas-projeto-spring-boot"><span style = "color:green"> <strong>[Gestão de Vagas] - Projeto Spring boot</strong> </span></h1>
-<h2 id="demonstracao-do-projeto"><span style = "color:green">Demonstração do Projeto</span></h2>
-<p><img alt="Descrição do GIF" src="../videos/gestao_vagas.gif" /></p>
-<h3 id="boas-praticas-em-programacao-orientadaa-objetos-utilizadas-nesse-projeto">Boas práticas em programação Orientadaa Objetos utilizadas nesse projeto</h3>
-<ul>
-<li>Single Responsability (SOLID)  </li>
-<li>KISS  </li>
-<li>YAGNI  </li>
-<li>Unit tests  </li>
-<li>Integration tests  </li>
-<li>JavaDoc</li>
-</ul>
-<h2 id="ferramentas-de-monitoramento-utilizadas">📈 Ferramentas de monitoramento utilizadas</h2>
-<p>Nesse projeto utilizei apenas o Prometheus no final. Teste os endpoints:</p>
-<ul>
-<li><a href="http://3.139.102.156:8080/actuator/health">Health</a></li>
-<li><a href="http://3.139.102.156:8080/actuator/metrics">Metrics</a></li>
-<li><a href="http://3.139.102.156:8080/actuator/prometheus">Prometheus</a></li>
-</ul>
-<p>Obs: devido a limitações de hardware, precisei retirar o Grafana do projeto até expandir meu SSD pra utilizar maiores imagens no docker.</p>
-<h2 id="docmentacao">Docmentação</h2>
-<p>Swagger documentation:</p>
-<ul>
-<li><a href="http://3.139.102.156:8080/swagger-ui/index.html#/">Swagger UI</a></li>
-</ul>
-<h3 id="endpoints">Endpoints:</h3>
-<ul>
-<li>Job listing</li>
-<li>Job registration</li>
-<li>Delete job</li>
-<li>Candidate Auth</li>
-<li>Job Apply</li>
-<li>Candidate profile</li>
-<li>Candidate Register</li>
-<li>Job listing by candidate</li>
-<li>Company register</li>
-<li>Auth company</li>
-</ul>
-<p><strong>Swagger endpoints</strong></p>
-<p><img alt="swagger" src="../images/s1.png" /></p>
-<p><img alt="swagger" src="../images/s2.png" /></p>
-<p><img alt="swagger" src="../images/s3.png" /></p>
-<h1 id="back-end"><span style = "color:green"> <strong>Back-end</strong> </span></h1>
-<ul>
-<li>Java  </li>
-<li>SpringBoot</li>
-</ul>
-<h3 id="fluxo-de-atualizacao-de-vagas">🏗 Fluxo de Atualização de Vagas</h3>
-<p><span style="color:blue;">👤 Cliente / Frontend</span> <br />
-- HTTP Request (GET, POST, PUT, DELETE)  </p>
-<p>👇</p>
-<p><span style="color:green;">📝 Controller (JobController)</span><br />
-- Recebe request<br />
-- Valida input / DTO<br />
-- Pega companyId / path params / headers<br />
-- Chama Use Case correspondente  </p>
-<p>👇</p>
-<p><span style="color:orange;">⚙️ Use Case</span><br />
-- Lógica de negócio<br />
-- Valida regras<br />
-- Prepara entidade<br />
-- Chama Repository  </p>
-<p>👇</p>
-<p><span style="color:purple;">💾 Repository (JobRepository)</span><br />
-- Acessa banco de dados<br />
-- Cria, atualiza, deleta ou busca dados  </p>
-<h3 id="estrutura-do-projeto-backend">Estrutura do projeto BackEnd</h3>
-<pre><code>├── src/main/java/br/com/felipevalboeno/gestao_vagas/
-│ ├── config/
-│ ├── exceptions/
-│ ├── modules/
-│ │ ├── candidate/
-│ │ │ └── controllers
-│ │ │ └── dto
-│ │ │ └── entity
-│ │ │ └── repository
-│ │ │ └── useCases
-│ │ ├── company/
-│ │ │ └── controllers
-│ │ │ └── dto
-│ │ │ └── entity
-│ │ │ └── repository
-│ │ │ └── useCasess
-│ │ └── ...
-│ ├── providers/
-│ └── security/
-└── application.properties
-</code></pre>
-<h1 id="front-end"><span style="color:orange;"><strong>Front-end</strong></span></h1>
-<ul>
-<li>Tailwind  </li>
-<li>RestTemplate para conectar com o backend</li>
-</ul>
-<h1 id="pages"><span style="color:orange;"><strong>Pages</strong></span></h1>
-<h3 id="candidato">Candidato</h3>
-<p><img alt="candidate" src="../images/c1.png" />
-<img alt="candidate" src="../images/c2.png" />
-<img alt="candidate" src="../images/c3.png" />
-<img alt="candidate" src="../images/c4.png" />
-<img alt="candidate" src="../images/c5.png" /></p>
-<h3 id="empresa">Empresa</h3>
-<p><img alt="company" src="../images/e1.png" />
-<img alt="company" src="../images/e2.png" />
-<img alt="company" src="../images/e3.png" />
-<img alt="company" src="../images/e4.png" /></p>
-<h1 id="deploy-com-render"><span style="color:orange;"><strong> Deploy com Render</strong></span></h1>
-<p>Pra subir essa aplicação, usei o Render (cloud hosting) por ter uma versão grátis pra estudo.</p>
-<h2 id="como-fazer-isso">Como fazer isso?</h2>
-<ul>
-<li>Faça login no Render usando sua conta do GitHub</li>
-<li>Faça as primeiras configurações simples, como configurar nome, banco de dados...</li>
-<li>Crie um dockerfile no seu projeto com a configuração do dockerfile config vista mais abaixo.</li>
-<li>Crie umnovo web service no Render, e faça o deploy com seu último commit no git.</li>
-</ul>
-<pre><code># =========================
-# Stage 1: Build
-# =========================
-FROM maven:3.9.3-eclipse-temurin-17 AS build
-
-# Define diretório de trabalho
-WORKDIR /app
-
-# Copia apenas o pom.xml para cache do Maven
-COPY pom.xml .
-
-# Baixa dependências sem reconstruir código
-RUN mvn dependency:go-offline -B
-
-# Copia o código-fonte
-COPY src ./src
-
-# Build do projeto, gera o .jar
-RUN mvn clean package -DskipTests
-
-# =========================
-# Stage 2: Runtime
-# =========================
-FROM openjdk:17-jdk-slim
-
-# Define diretório de trabalho
-WORKDIR /app
-
-# Copia o .jar do stage de build
-COPY --from=build /app/target/gestao_vagas-0.0.1-SNAPSHOT.jar app.jar
-
-# Expõe a porta do Spring Boot
-EXPOSE 8080
-
-# Comando para rodar a aplicação
-ENTRYPOINT [&quot;java&quot;, &quot;-jar&quot;, &quot;app.jar&quot;]
+  <h1>Gerador de Certificado</h1>
 
 
-ENTRYPOINT [ &quot;java&quot;, &quot;-jar&quot;, &quot;app.jar&quot; ]
-</code></pre>
-<h2 id="criando-um-banco-de-dados-e-webserver-na-aws-com-rds-e-ec2"><span style="color:orange;"><strong> Criando um banco de dados e webserver na AWS com RDS e EC2</strong></span></h2>
-<ul>
-<li>Crie uma conta na Amazon AWS </li>
-<li>Pesquise por RDS e vá em criar banco de dados  </li>
-<li>Escolhaa standard creation &gt; PostgreSQL &gt; Models: Free tier &gt; Create database  </li>
-<li>Pesquise por EC2  </li>
-<li>AMI - Kernel6.1 - free &gt; Instance: t3.MICRO - free  </li>
-<li>Crie um par de chaves: RSA &gt; .pem  </li>
-<li>Execute a instancia e faça a conexão</li>
-</ul>
-<h1 id="criando-dockerhub"><span style="color:orange;"><strong> Criando DockerHub</strong></span></h1>
-<ul>
-<li>Com o DockerHub, você pode salvar uma imagem pronta pra uso da sua aplicação, da mesma forma que você salva seu código no GitHub.</li>
-<li>Você só precisa de um arquivo .yml na raiz do seu projeto, o meu ficou assim:</li>
-</ul>
-<pre><code>name: Gestão de Vagas Application
-on: 
-    push:
-        branches: [main]
-jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout code
-              uses: actions/checkout@v3
-            - name: Set up Java
-              uses: actions/setup-java@v3
-              with:
-                distribution: temurin
-                java-version: 17
-            - name: Build project
-              run: mvn clean install
-            - name: login docker
-              run: docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}}
-            - name: Build docker image
-              run: docker build -t felipevalboenodocker/gestao_vagas .
-            - name: Publish image
-              run: docker push felipevalboenodocker/gestao_vagas        
-</code></pre>
-<h3 id="obs">OBS:</h3>
-<ul>
-<li>I used Putty to configure the Docker on EC2 AWS.</li>
-<li>I used a Database Client extension to conect a new postgrSQL to EC2 endpoint, and I change the DTABASE_URL on github to this new database that I create.</li>
-</ul>
-<h2 id="how-to-start-the-application-after-all-this-configurations">How to start the application after all this configurations</h2>
-<ol>
-<li>Open your Putty app</li>
-<li>Connect on the saved session </li>
-<li>execute: cd ~/actions-runner</li>
-<li>Check on your github if the runner ar online, if not, execute: ./run.sh</li>
-<li>execute: docker start gestao-vagas </li>
-<li>execute: docker ps </li>
-<li>execute: docker logs gestao_vagas , check if the application started as well</li>
-<li>Open Swagger: http://<public_ec2_ip>:8080/swagger-ui/index.html an do a test.</li>
-</ol>
 
 
 
