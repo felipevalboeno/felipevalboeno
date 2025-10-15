@@ -723,28 +723,62 @@
 <li>SpringBoot</li>
 </ul>
 <h3 id="fluxo-de-atualizacao-de-vagas">🏗 Fluxo de Atualização de Vagas</h3>
-<p><span style="color:blue;">👤 Cliente / Frontend</span><br />
-&nbsp;&nbsp;&nbsp;&nbsp;|<br />
-&nbsp;&nbsp;&nbsp;&nbsp;| HTTP Request (GET, POST, PUT, DELETE)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;v  </p>
+<p><span style="color:blue;">👤 Cliente / Frontend</span> <br />
+- HTTP Request (GET, POST, PUT, DELETE)  </p>
+<p>👇</p>
 <p><span style="color:green;">📝 Controller (JobController)</span><br />
 - Recebe request<br />
 - Valida input / DTO<br />
 - Pega companyId / path params / headers<br />
-- Chama Use Case correspondente<br />
-&nbsp;&nbsp;&nbsp;&nbsp;|<br />
-&nbsp;&nbsp;&nbsp;&nbsp;v  </p>
+- Chama Use Case correspondente  </p>
+<p>👇</p>
 <p><span style="color:orange;">⚙️ Use Case</span><br />
 - Lógica de negócio<br />
 - Valida regras<br />
 - Prepara entidade<br />
-- Chama Repository<br />
-&nbsp;&nbsp;&nbsp;&nbsp;|<br />
-&nbsp;&nbsp;&nbsp;&nbsp;v  </p>
+- Chama Repository  </p>
+<p>👇</p>
 <p><span style="color:purple;">💾 Repository (JobRepository)</span><br />
 - Acessa banco de dados<br />
 - Cria, atualiza, deleta ou busca dados  </p>
 <h3 id="estrutura-do-projeto-backend">Estrutura do projeto BackEnd</h3>
+<p>├── src/main/java/br/com/felipevalboeno/gestao_vagas/
+│ ├── config/
+│ ├── exceptions/
+│ ├── modules/
+│ │ ├── candidate/
+│ │ │ └── controllers
+│ │ │ └── dto
+│ │ │ └── entity
+│ │ │ └── repository
+│ │ │ └── useCases
+│ │ ├── company/
+│ │ │ └── controllers
+│ │ │ └── dto
+│ │ │ └── entity
+│ │ │ └── repository
+│ │ │ └── useCasess
+│ │ └── ...
+│ ├── providers/
+│ └── security/
+└── application.properties</p>
+<h1 id="front-end">Front End</h1>
+<ul>
+<li>Tailwind  </li>
+<li>RestTemplate para conectar com o backend</li>
+</ul>
+<h1 id="pages"><span style="color:blue;">Pages</span></h1>
+<h3 id="candidato">Candidato</h3>
+<p><img alt="candidate" src="../images/c1.png" />
+<img alt="candidate" src="../images/c2.png" />
+<img alt="candidate" src="../images/c3.png" />
+<img alt="candidate" src="../images/c4.png" />
+<img alt="candidate" src="../images/c5.png" /></p>
+<h3 id="empresa">Empresa</h3>
+<p><img alt="company" src="../images/e1.png" />
+<img alt="company" src="../images/e2.png" />
+<img alt="company" src="../images/e3.png" />
+<img alt="company" src="../images/e4.png" /></p>
 
 
 
