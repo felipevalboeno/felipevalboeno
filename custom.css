@@ -64,13 +64,3 @@
 }
 
 
-
-.gif-grande {
-    width: 100%;      /* ocupa toda a largura do conteúdo */
-    max-width: 1200px; /* limita o máximo */
-    height: auto;     /* mantém a proporção */
-    display: block;
-    margin: 0 auto;   /* centraliza */
-}
-
-
