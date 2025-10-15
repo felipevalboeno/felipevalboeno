@@ -66,14 +66,7 @@
 
 /* Aplica o fundo só na página index */
 .home-bg {
-  background: linear-gradient(
-    135deg,
-    rgba(46, 204, 113, 0.15),
-    rgba(39, 174, 96, 0.25),
-    rgba(26, 188, 156, 0.15)
-  );
-  padding: 2rem;
-  border-radius: 16px;
+   background-color: #9dd2f6;
 }
 
 
