@@ -773,14 +773,11 @@ O sistema tem como objetivo oferecer uma <strong>plataforma de cadastro e gerenc
 </ul>
 <p>Obs: devido a limitações de hardware, precisei retirar o Grafana do projeto até expandir meu SSD pra utilizar maiores imagens no docker.</p>
 <hr />
-<blockquote>
 <h2 id="docmentacao"><span style="color:orange;"><strong>Docmentação</strong></span></h2>
 <p>Swagger documentation:</p>
-</blockquote>
 <ul>
 <li><a href="http://3.139.102.156:8080/swagger-ui/index.html#/">Swagger UI</a></li>
 </ul>
-<blockquote>
 <h3 id="endpoints"><strong>Endpoints</strong>:</h3>
 <ul>
 <li>Job listing</li>
@@ -795,21 +792,16 @@ O sistema tem como objetivo oferecer uma <strong>plataforma de cadastro e gerenc
 <li>Auth company</li>
 </ul>
 <p><strong>Swagger endpoints</strong></p>
-</blockquote>
 <p><img alt="swagger" src="../images/s1.png" /></p>
 <p><img alt="swagger" src="../images/s2.png" /></p>
 <p><img alt="swagger" src="../images/s3.png" /></p>
 <hr />
-<blockquote>
 <h2 id="back-end"><span style = "color:green"> <strong>Back-end</strong> </span></h2>
-</blockquote>
 <ul>
 <li>Java  </li>
 <li>SpringBoot</li>
 </ul>
-<blockquote>
 <h3 id="fluxo-de-atualizacao-de-vagas">🏗 Fluxo de Atualização de Vagas</h3>
-</blockquote>
 <p><span style="color:blue;">👤 Cliente / Frontend</span> <br />
 - HTTP Request (GET, POST, PUT, DELETE)  </p>
 <p>👇</p>
@@ -851,14 +843,12 @@ O sistema tem como objetivo oferecer uma <strong>plataforma de cadastro e gerenc
 └── application.properties
 </code></pre>
 <hr />
-<blockquote>
 <h1 id="front-end"><span style="color:orange;"><strong>Front-end</strong></span></h1>
 <ul>
 <li>Tailwind  </li>
 <li>RestTemplate para conectar com o backend</li>
 </ul>
 <h1 id="pages"><span style="color:orange;"><strong>Pages</strong></span></h1>
-</blockquote>
 <h3 id="candidato">Candidato</h3>
 <p><img alt="candidate" src="../images/c1.png" />
 <img alt="candidate" src="../images/c2.png" />
@@ -871,10 +861,8 @@ O sistema tem como objetivo oferecer uma <strong>plataforma de cadastro e gerenc
 <img alt="company" src="../images/e3.png" />
 <img alt="company" src="../images/e4.png" /></p>
 <hr />
-<blockquote>
 <h1 id="deploy-com-render"><span style="color:orange;"><strong> Deploy com Render</strong></span></h1>
 <p>Pra subir essa aplicação, usei o Render (cloud hosting) por ter uma versão grátis pra estudo.</p>
-</blockquote>
 <h2 id="como-fazer-isso">Como fazer isso?</h2>
 <ul>
 <li>Faça login no Render usando sua conta do GitHub</li>
@@ -923,7 +911,6 @@ ENTRYPOINT [&quot;java&quot;, &quot;-jar&quot;, &quot;app.jar&quot;]
 ENTRYPOINT [ &quot;java&quot;, &quot;-jar&quot;, &quot;app.jar&quot; ]
 </code></pre>
 <hr />
-<blockquote>
 <h2 id="criando-um-banco-de-dados-e-webserver-na-aws-com-rds-e-ec2"><span style="color:orange;"><strong> Criando um banco de dados e webserver na AWS com RDS e EC2</strong></span></h2>
 <ul>
 <li>Crie uma conta na Amazon AWS </li>
@@ -934,15 +921,12 @@ ENTRYPOINT [ &quot;java&quot;, &quot;-jar&quot;, &quot;app.jar&quot; ]
 <li>Crie um par de chaves: RSA &gt; .pem  </li>
 <li>Execute a instancia e faça a conexão</li>
 </ul>
-</blockquote>
 <hr />
-<blockquote>
 <h1 id="criando-dockerhub"><span style="color:orange;"><strong> Criando DockerHub</strong></span></h1>
 <ul>
 <li>Com o DockerHub, você pode salvar uma imagem pronta pra uso da sua aplicação, da mesma forma que você salva seu código no GitHub.</li>
 <li>Você só precisa de um arquivo .yml na raiz do seu projeto, o meu ficou assim:</li>
 </ul>
-</blockquote>
 <pre><code>name: Gestão de Vagas Application
 on: 
     push:
@@ -968,12 +952,12 @@ jobs:
               run: docker push felipevalboenodocker/gestao_vagas        
 </code></pre>
 <hr />
-<blockquote>
 <h3 id="obs">OBS:</h3>
 <ul>
 <li>I used Putty to configure the Docker on EC2 AWS.</li>
 <li>I used a Database Client extension to conect a new postgrSQL to EC2 endpoint, and I change the DTABASE_URL on github to this new database that I create.</li>
 </ul>
+<hr />
 <h2 id="how-to-start-the-application-after-all-this-configurations">How to start the application after all this configurations</h2>
 <ol>
 <li>Open your Putty app</li>
@@ -985,7 +969,6 @@ jobs:
 <li>execute: docker logs gestao_vagas , check if the application started as well</li>
 <li>Open Swagger: http://<public_ec2_ip>:8080/swagger-ui/index.html an do a test.</li>
 </ol>
-</blockquote>
 
 
 
