@@ -63,19 +63,14 @@
   border-radius: 10px;
 }
 
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
+
+
+.gif-grande {
+    width: 100%;      /* ocupa toda a largura do conteúdo */
+    max-width: 1200px; /* limita o máximo */
+    height: auto;     /* mantém a proporção */
+    display: block;
+    margin: 0 auto;   /* centraliza */
 }
 
-.video-container iframe,
-.video-container video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 
