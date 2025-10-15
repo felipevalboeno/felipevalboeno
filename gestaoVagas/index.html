@@ -769,53 +769,60 @@
   2. Faça as primeiras configurações simples, como configurar nome, banco de dados...
   3. Crie um dockerfile no seu projeto com a configuração do dockerfile config vista mais abaixo.
   4. Crie umnovo web service no Render, e faça o deploy com seu último commit no git.</p>
-<p>```dockerfile config</p>
-<h1 id="_1">=========================</h1>
-<h1 id="stage-1-build">Stage 1: Build</h1>
-<h1 id="_2">=========================</h1>
-<p>FROM maven:3.9.3-eclipse-temurin-17 AS build</p>
-<h1 id="define-diretorio-de-trabalho">Define diretório de trabalho</h1>
-<p>WORKDIR /app</p>
-<h1 id="copia-apenas-o-pomxml-para-cache-do-maven">Copia apenas o pom.xml para cache do Maven</h1>
-<p>COPY pom.xml .</p>
-<h1 id="baixa-dependencias-sem-reconstruir-codigo">Baixa dependências sem reconstruir código</h1>
-<p>RUN mvn dependency:go-offline -B</p>
-<h1 id="copia-o-codigo-fonte">Copia o código-fonte</h1>
-<p>COPY src ./src</p>
-<h1 id="build-do-projeto-gera-o-jar">Build do projeto, gera o .jar</h1>
-<p>RUN mvn clean package -DskipTests</p>
-<h1 id="_3">=========================</h1>
-<h1 id="stage-2-runtime">Stage 2: Runtime</h1>
-<h1 id="_4">=========================</h1>
-<p>FROM openjdk:17-jdk-slim</p>
-<h1 id="define-diretorio-de-trabalho_1">Define diretório de trabalho</h1>
-<p>WORKDIR /app</p>
-<h1 id="copia-o-jar-do-stage-de-build">Copia o .jar do stage de build</h1>
-<p>COPY --from=build /app/target/gestao_vagas-0.0.1-SNAPSHOT.jar app.jar</p>
-<h1 id="expoe-a-porta-do-spring-boot">Expõe a porta do Spring Boot</h1>
-<p>EXPOSE 8080</p>
-<h1 id="comando-para-rodar-a-aplicacao">Comando para rodar a aplicação</h1>
-<p>ENTRYPOINT ["java", "-jar", "app.jar"]</p>
-<p>ENTRYPOINT [ "java", "-jar", "app.jar" ]</p>
-<pre><code>
-## &lt;span style=&quot;color:orange;&quot;&gt;** Criando um banco de dados e webserver na AWS com RDS e EC2**&lt;/span&gt; 
-  1.  Crie uma conta na Amazon AWS 
-  2. Pesquise por RDS e vá em criar banco de dados  
-  3. Escolhaa standard creation &gt; PostgreSQL &gt; Models: Free tier &gt; Create database  
-  4. Pesquise por EC2  
-  5. AMI - Kernel6.1 - free &gt; Instance: t3.MICRO - free  
-  6. Crie um par de chaves: RSA &gt; .pem  
-  7. Execute a instancia e faça a conexão
+<pre><code># =========================
+# Stage 1: Build
+# =========================
+FROM maven:3.9.3-eclipse-temurin-17 AS build
+
+# Define diretório de trabalho
+WORKDIR /app
+
+# Copia apenas o pom.xml para cache do Maven
+COPY pom.xml .
+
+# Baixa dependências sem reconstruir código
+RUN mvn dependency:go-offline -B
+
+# Copia o código-fonte
+COPY src ./src
+
+# Build do projeto, gera o .jar
+RUN mvn clean package -DskipTests
+
+# =========================
+# Stage 2: Runtime
+# =========================
+FROM openjdk:17-jdk-slim
+
+# Define diretório de trabalho
+WORKDIR /app
+
+# Copia o .jar do stage de build
+COPY --from=build /app/target/gestao_vagas-0.0.1-SNAPSHOT.jar app.jar
+
+# Expõe a porta do Spring Boot
+EXPOSE 8080
+
+# Comando para rodar a aplicação
+ENTRYPOINT [&quot;java&quot;, &quot;-jar&quot;, &quot;app.jar&quot;]
 
 
-# &lt;span style=&quot;color:orange;&quot;&gt;** Criando DockerHub**&lt;/span&gt; 
-Com o DockerHub, você pode salvar uma imagem pronta pra uso da sua aplicação, da mesma forma que você salva seu código no GitHub.
-
-Você só precisa de um arquivo .yml na raiz do seu projeto, o meu ficou assim:
-
-
-```dockerfile config
-name: Gestão de Vagas Application
+ENTRYPOINT [ &quot;java&quot;, &quot;-jar&quot;, &quot;app.jar&quot; ]
+</code></pre>
+<h2 id="criando-um-banco-de-dados-e-webserver-na-aws-com-rds-e-ec2"><span style="color:orange;"><strong> Criando um banco de dados e webserver na AWS com RDS e EC2</strong></span></h2>
+<ol>
+<li>Crie uma conta na Amazon AWS </li>
+<li>Pesquise por RDS e vá em criar banco de dados  </li>
+<li>Escolhaa standard creation &gt; PostgreSQL &gt; Models: Free tier &gt; Create database  </li>
+<li>Pesquise por EC2  </li>
+<li>AMI - Kernel6.1 - free &gt; Instance: t3.MICRO - free  </li>
+<li>Crie um par de chaves: RSA &gt; .pem  </li>
+<li>Execute a instancia e faça a conexão</li>
+</ol>
+<h1 id="criando-dockerhub"><span style="color:orange;"><strong> Criando DockerHub</strong></span></h1>
+<p>Com o DockerHub, você pode salvar uma imagem pronta pra uso da sua aplicação, da mesma forma que você salva seu código no GitHub.</p>
+<p>Você só precisa de um arquivo .yml na raiz do seu projeto, o meu ficou assim:</p>
+<pre><code>name: Gestão de Vagas Application
 on: 
     push:
         branches: [main]
