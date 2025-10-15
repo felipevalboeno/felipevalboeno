@@ -530,19 +530,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Gestão de Vagas
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -554,82 +541,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#demonstracao-do-projeto" class="md-nav__link">
-    <span class="md-ellipsis">
-      Demonstração do Projeto
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Demonstração do Projeto">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#boas-praticas-em-programacao-orientadaa-objetos-utilizadas-nesse-projeto" class="md-nav__link">
-    <span class="md-ellipsis">
-      Boas práticas em programação Orientadaa Objetos utilizadas nesse projeto
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ferramentas-de-monitoramento-utilizadas" class="md-nav__link">
-    <span class="md-ellipsis">
-      📈 Ferramentas de monitoramento utilizadas
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#docmentacao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Docmentação
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Docmentação">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#endpoints" class="md-nav__link">
-    <span class="md-ellipsis">
-      Endpoints:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -683,9 +594,45 @@
 
 
 <h1 id="gestao-de-vagas-projeto-spring-boot"><span style = "color:green"> <strong>[Gestão de Vagas] - Projeto Spring boot</strong> </span></h1>
+<h1 id="gestao-de-vagas-projeto-spring-boot_1"><span style="color:green;">💼 <strong>Gestão de Vagas — Projeto Spring Boot</strong></span></h1>
+<blockquote>
+<p>🚀 <strong>Descrição Geral</strong></p>
+</blockquote>
+<p>Este projeto foi desenvolvido utilizando o <strong>Spring Framework</strong> e a linguagem <strong>Java</strong>, abordando conceitos essenciais da <strong>Programação Orientada a Objetos (POO)</strong> e boas práticas de arquitetura.<br />
+O sistema tem como objetivo oferecer uma <strong>plataforma de cadastro e gerenciamento de vagas de tecnologia</strong>, onde:</p>
+<ul>
+<li>🏢 <strong>Empresas</strong> podem realizar seu cadastro e publicar vagas.  </li>
+<li>👩‍💻 <strong>Candidatos</strong> podem criar perfis, visualizar oportunidades e se candidatar.</li>
+</ul>
+<hr />
+<blockquote>
+<p>🧩 <strong>Principais Tecnologias e Recursos Utilizados</strong></p>
+</blockquote>
+<ul>
+<li><strong>Spring Boot</strong>, <strong>Spring Security</strong>, <strong>Spring Data JPA</strong></li>
+<li><strong>Thymeleaf</strong> integrado com <strong>TailwindCSS</strong> (Front-end)</li>
+<li><strong>Swagger</strong> para documentação dos endpoints</li>
+<li><strong>JUnit</strong> e <strong>Mockito</strong> para testes unitários</li>
+<li><strong>Prometheus</strong> para monitoramento da aplicação</li>
+<li><strong>Princípios SOLID</strong> e boas práticas de clean code</li>
+</ul>
+<hr />
+<blockquote>
+<p>🐳 <strong>Infraestrutura e Deploy</strong></p>
+</blockquote>
+<p>A aplicação é totalmente conteinerizada com <strong>Docker</strong>, utilizando imagens hospedadas no <strong>DockerHub</strong>, e foi implantada na <strong>AWS (EC2 e RDS)</strong>.  </p>
+<p>Além disso:
+- ⚙️ Foram configurados <strong>GitHub Actions</strong> para CI/CD.
+- 🔐 As <strong>secrets e variáveis de ambiente</strong> são gerenciadas via GitHub.
+- 🌐 Conexão com o <strong>RDS</strong> (MySQL) feita diretamente via extensão de banco de dados no VS Code.</p>
+<blockquote>
+<p>Exemplo de host usado na conexão:</p>
+</blockquote>
+<pre><code class="language-bash">db-gestao-vagas.c96cuumyu0ti.us-east-2.rds.amazonaws.com
+</code></pre>
 <h2 id="demonstracao-do-projeto"><span style = "color:green">Demonstração do Projeto</span></h2>
 <p><img alt="Descrição do GIF" src="../videos/gestao_vagas.gif" /></p>
-<h3 id="boas-praticas-em-programacao-orientadaa-objetos-utilizadas-nesse-projeto">Boas práticas em programação Orientadaa Objetos utilizadas nesse projeto</h3>
+<h3 id="boas-praticas-em-programacao-orientadaa-objetos-utilizadas-nesse-projeto"># <span style="color:orange;"><strong>Boas práticas em programação Orientadaa Objetos utilizadas nesse projeto</strong></span></h3>
 <ul>
 <li>Single Responsability (SOLID)  </li>
 <li>KISS  </li>
@@ -694,7 +641,7 @@
 <li>Integration tests  </li>
 <li>JavaDoc</li>
 </ul>
-<h2 id="ferramentas-de-monitoramento-utilizadas">📈 Ferramentas de monitoramento utilizadas</h2>
+<h2 id="ferramentas-de-monitoramento-utilizadas"># <span style="color:orange;">📈<strong>Ferramentas de monitoramento utilizadas</strong></span></h2>
 <p>Nesse projeto utilizei apenas o Prometheus no final. Teste os endpoints:</p>
 <ul>
 <li><a href="http://3.139.102.156:8080/actuator/health">Health</a></li>
@@ -702,12 +649,12 @@
 <li><a href="http://3.139.102.156:8080/actuator/prometheus">Prometheus</a></li>
 </ul>
 <p>Obs: devido a limitações de hardware, precisei retirar o Grafana do projeto até expandir meu SSD pra utilizar maiores imagens no docker.</p>
-<h2 id="docmentacao">Docmentação</h2>
+<h2 id="docmentacao"><span style="color:orange;"><strong>Docmentação</strong></span></h2>
 <p>Swagger documentation:</p>
 <ul>
 <li><a href="http://3.139.102.156:8080/swagger-ui/index.html#/">Swagger UI</a></li>
 </ul>
-<h3 id="endpoints">Endpoints:</h3>
+<h3 id="endpoints"><strong>Endpoints</strong>:</h3>
 <ul>
 <li>Job listing</li>
 <li>Job registration</li>
