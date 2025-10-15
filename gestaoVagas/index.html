@@ -765,10 +765,10 @@
 <h1 id="deploy-com-render"><span style="color:orange;"><strong> Deploy com Render</strong></span></h1>
 <p>Pra subir essa aplicação, usei o Render (cloud hosting) por ter uma versão grátis pra estudo.</p>
 <p>Como fazer isso?
-  1. Faça login no Render usando sua conta do GitHub
-  2. Faça as primeiras configurações simples, como configurar nome, banco de dados...
-  3. Crie um dockerfile no seu projeto com a configuração do dockerfile config vista mais abaixo.
-  4. Crie umnovo web service no Render, e faça o deploy com seu último commit no git.</p>
+- Faça login no Render usando sua conta do GitHub
+- Faça as primeiras configurações simples, como configurar nome, banco de dados...
+- Crie um dockerfile no seu projeto com a configuração do dockerfile config vista mais abaixo.
+- Crie umnovo web service no Render, e faça o deploy com seu último commit no git.</p>
 <pre><code># =========================
 # Stage 1: Build
 # =========================
@@ -810,7 +810,7 @@ ENTRYPOINT [&quot;java&quot;, &quot;-jar&quot;, &quot;app.jar&quot;]
 ENTRYPOINT [ &quot;java&quot;, &quot;-jar&quot;, &quot;app.jar&quot; ]
 </code></pre>
 <h2 id="criando-um-banco-de-dados-e-webserver-na-aws-com-rds-e-ec2"><span style="color:orange;"><strong> Criando um banco de dados e webserver na AWS com RDS e EC2</strong></span></h2>
-<ol>
+<ul>
 <li>Crie uma conta na Amazon AWS </li>
 <li>Pesquise por RDS e vá em criar banco de dados  </li>
 <li>Escolhaa standard creation &gt; PostgreSQL &gt; Models: Free tier &gt; Create database  </li>
@@ -818,10 +818,12 @@ ENTRYPOINT [ &quot;java&quot;, &quot;-jar&quot;, &quot;app.jar&quot; ]
 <li>AMI - Kernel6.1 - free &gt; Instance: t3.MICRO - free  </li>
 <li>Crie um par de chaves: RSA &gt; .pem  </li>
 <li>Execute a instancia e faça a conexão</li>
-</ol>
+</ul>
 <h1 id="criando-dockerhub"><span style="color:orange;"><strong> Criando DockerHub</strong></span></h1>
-<p>Com o DockerHub, você pode salvar uma imagem pronta pra uso da sua aplicação, da mesma forma que você salva seu código no GitHub.</p>
-<p>Você só precisa de um arquivo .yml na raiz do seu projeto, o meu ficou assim:</p>
+<ul>
+<li>Com o DockerHub, você pode salvar uma imagem pronta pra uso da sua aplicação, da mesma forma que você salva seu código no GitHub.</li>
+<li>Você só precisa de um arquivo .yml na raiz do seu projeto, o meu ficou assim:</li>
+</ul>
 <pre><code>name: Gestão de Vagas Application
 on: 
     push:
