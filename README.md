@@ -73,8 +73,8 @@
 
 
 ## 📌 Projetos em destaque
-- [Projeto SpringBoot](https://github.com/felipevalboeno/workshop-springboot4-jpa): Trata-se de um projeto de prática e estudo das tecnologias SpringBoot, JPA/Hibernate utilizando o banco de dados em memória H2 para os testes.
-- [API de Produtos](https://github.com/felipevalboeno/workshop-backend-restfull): Trata-se de um projeto base de CRUD completo com SpringBoot feito no vsCode. Muito útil para iniciantes terem uma base de CRUD no padrão MVC com Spring.
+- [Projeto Gestão de Vagas](https://felipevalboeno.github.io/felipevalboeno/gestaoVagas/): TEste projeto foi desenvolvido utilizando o Spring Framework e a linguagem Java, abordando conceitos essenciais da Programação Orientada a Objetos (POO) e boas práticas de arquitetura. O sistema tem como objetivo oferecer uma plataforma de cadastro e gerenciamento de vagas de tecnologia.
+- [API CRUD de Cursos](https://felipevalboeno.github.io/felipevalboeno/crud_cursos/): Este projeto consiste na construção de uma API RESTful utilizando Java com Spring Boot, JPA e PostgreSQL (Dbeaver). Ele implementa as operações completas de CRUD (Create, Read, Update, Delete) em uma estrutura MVC, além de aplicar o padrão DTO para transferência de dados entre as camadas e utilizar a biblioteca ModelMapper para facilitar o mapeamento entre entidades e DTOs.
 - [Angular: Gerador de certificados](https://github.com/felipevalboeno/ProjectRCKTS-Angular-Certificate-Generator):Criei um gerador de certificado em Angular, com funcionalidade de download. Nele, você preenche o nome, os cursos desenvolvidos, e cria um layout de um certificado de conclusão. Pode ser testado tanto em desktop como em mobile.
 
 ## 🏢 Empresas onde já atuei
