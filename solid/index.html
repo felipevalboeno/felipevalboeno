@@ -504,6 +504,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#principio-x-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Princípio X Objetivo
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -683,59 +692,200 @@
 <h1 id="solid">🌿 SOLID</h1>
 <hr />
 <h2 id="http-verbs"><span style = "color:hotpink">✨ HTTP Verbs </span></h2>
-<div class="admonition info">
-<p class="admonition-title">GET</p>
-<p>🟠 <strong>GET:</strong> Retrieve data from the server.</p>
-</div>
-<div class="admonition success">
-<p class="admonition-title">POST</p>
-<p>🟢 <strong>POST:</strong> Send data to the server to create a resource.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">PUT</p>
-<p>🔵 <strong>PUT:</strong> Send data to the server to update a resource.</p>
-</div>
-<div class="admonition danger">
-<p class="admonition-title">DELETE</p>
-<p>🔴 <strong>DELETE:</strong> Delete a resource from the server.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">PATCH</p>
-<p>🟠 <strong>PATCH:</strong> Send data to the server to update a resource partially.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">TRACE</p>
-<p>🟠 <strong>TRACE:</strong> Returns the full HTTP Request received by the server for debugging.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">OPTIONS</p>
-<p>🟠 <strong>OPTIONS:</strong> Returns the HTTP methods supported by the server for the request URL.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">CONNECT</p>
-<p>🟠 <strong>CONNECT:</strong> Converts the request connection to a transparent TCP/IP tunnel for secure communication.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">PURGE</p>
-<p>🟡 <strong>PURGE:</strong> Invalidates a cached resource.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">LOCK</p>
-<p>🟡 <strong>LOCK:</strong> Locks the resource for exclusive use by the client.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">UNLOCK</p>
-<p>🟡 <strong>UNLOCK:</strong> Unlocks the resource previously locked by the client.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">MKCOL</p>
-<p>🟠 <strong>MKCOL:</strong> Creates a new collection resource.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">COPY</p>
-<p>🟠 <strong>COPY:</strong> Copies the resource identified by the request-URI to the destination URI.</p>
-</div>
-<hr />
+<p>!!! Single Responsibility Principle (SRP)
+    🟠 <strong>Princípio da Responsabilidade Única:</strong>
+        Uma classe deve ter apenas um motivo para mudar, ou seja, ela deve ter apenas uma responsabilidade.</p>
+<pre><code>//exemplo ruim: Problema: A classe Relatorio tem duas responsabilidades: gerar relatório e salvar em arquivo.
+class Relatorio {
+    public void gerarRelatorio() {
+        // gera relatório
+    }
+
+    public void salvarNoArquivo() {
+        // salva relatório em arquivo
+    }
+}
+
+//exemplo correto
+class Relatorio {
+    public void gerarRelatorio() {
+        // gera relatório
+    }
+}
+
+class RelatorioArquivo {
+    public void salvar(Relatorio relatorio) {
+        // salva relatório em arquivo
+    }
+}
+//Cada classe tem uma única responsabilidade: gerar ou salvar.
+
+</code></pre>
+<p>!!! Open/Closed Principle (OCP)
+    🟠 <strong>Princípio Aberto/Fechado:</strong>
+        Uma classe deve estar aberta para extensão, mas fechada para modificação.</p>
+<pre><code>//exemplo ruim: Toda vez que você quiser adicionar uma operação nova, precisa modificar a classe.
+class Calculadora {
+    public double calcular(String tipo, double a, double b) {
+        if (tipo.equals(&quot;SOMA&quot;)) return a + b;
+        else if (tipo.equals(&quot;MULT&quot;)) return a * b;
+        return 0;
+    }
+}
+
+//exemplo correto:
+interface Operacao {
+    double calcular(double a, double b);
+}
+
+class Soma implements Operacao {
+    public double calcular(double a, double b) {
+        return a + b;
+    }
+}
+
+class Multiplicacao implements Operacao {
+    public double calcular(double a, double b) {
+        return a * b;
+    }
+}
+
+class Calculadora {
+    public double calcular(Operacao operacao, double a, double b) {
+        return operacao.calcular(a, b);
+    }
+}
+Agora, para adicionar uma nova operação, basta criar uma nova classe que implemente Operacao, sem modificar a Calculadora.
+
+</code></pre>
+<p>!!!Liskov Substitution Principle (LSP)
+    🟠 <strong>Princípio da Substituição de Liskov:</strong>
+        Classes derivadas devem poder ser substituídas por suas classes base sem quebrar o funcionamento do programa.</p>
+<pre><code>Exemplo ruim:Pinguim não pode substituir Ave porque lança exceção ao chamar voar().
+
+class Ave {
+    public void voar() {}
+}
+
+class Pinguim extends Ave {
+    public void voar() {
+        throw new UnsupportedOperationException(&quot;Pinguins não voam!&quot;);
+    }
+}
+
+Exemplo correto: 
+
+interface Ave {
+}
+
+interface AveQueVoa {
+    void voar();
+}
+
+class Pardal implements AveQueVoa {
+    public void voar() {
+        System.out.println(&quot;Pardal voando&quot;);
+    }
+}
+
+class Pinguim implements Ave {
+    // Pinguim não implementa AveQueVoa
+}
+
+//Cada classe implementa apenas o que faz sentido, evitando violações do LSP.
+
+</code></pre>
+<p>!!! Interface Segregation Principle (ISP)
+    🟠 <strong>Princípio da Segregação de Interfaces:</strong>
+        Muitas interfaces específicas são melhores que uma interface única e genérica.</p>
+<pre><code>Exemplo ruim: Robô não tira férias, mas é forçado a implementar.
+interface Trabalhador {
+    void trabalhar();
+    void tirarFerias();
+}
+
+class Funcionario implements Trabalhador {
+    public void trabalhar() { }
+    public void tirarFerias() { }
+}
+
+class Robo implements Trabalhador {
+    public void trabalhar() { }
+    public void tirarFerias() {
+        throw new UnsupportedOperationException();
+    }
+}
+
+Exemplo correto: 
+interface Trabalhador {
+    void trabalhar();
+}
+
+interface Ferias {
+    void tirarFerias();
+}
+
+class Funcionario implements Trabalhador, Ferias {
+    public void trabalhar() { }
+    public void tirarFerias() { }
+}
+
+class Robo implements Trabalhador {
+    public void trabalhar() { }
+}
+
+//Agora as classes implementam apenas o que é relevante.
+
+</code></pre>
+<p>!!! Dependency Inversion Principle (DIP)
+    🟠 <strong>Princípio da Inversão de Dependência:</strong>
+        Dependa de abstrações, não de implementações concretas.</p>
+<pre><code>Exemplo ruim: UsuarioService depende de uma implementação concreta (MySQLDatabase).
+class MySQLDatabase {
+    public void salvar() {}
+}
+
+class UsuarioService {
+    private MySQLDatabase db = new MySQLDatabase();
+
+    public void salvarUsuario() {
+        db.salvar();
+    }
+}
+// Exemplo correto: UsuarioService agora depende de uma abstração (Database) e não de uma implementação concreta.
+
+interface Database {
+    void salvar();
+}
+
+class MySQLDatabase implements Database {
+    public void salvar() {}
+}
+
+class UsuarioService {
+    private Database db;
+
+    public UsuarioService(Database db) {
+        this.db = db;
+    }
+
+    public void salvarUsuario() {
+        db.salvar();
+    }
+}
+
+// Uso
+Database db = new MySQLDatabase();
+UsuarioService service = new UsuarioService(db);
+service.salvarUsuario();
+
+</code></pre>
+<h2 id="principio-x-objetivo">Princípio X Objetivo</h2>
+<p><strong>SRP</strong> Uma classe = uma responsabilidade
+<strong>OCP</strong> Aberta para extensão, fechada para modificação
+<strong>LSP</strong> Subclasses podem substituir a superclasse
+<strong>ISP</strong> Interfaces específicas &gt; interface única gigante
+<strong>DIP</strong> Dependa de abstrações, não de concretos</p>
 
 
 
