@@ -686,7 +686,8 @@
 <p>🟠  Single Responsibility Principle (SRP)
     <strong>Princípio da Responsabilidade Única:</strong></p>
 </blockquote>
-<p>Uma classe deve ter apenas um motivo para mudar, ou seja, ela deve ter apenas uma responsabilidade.</p>
+<pre><code> Uma classe deve ter apenas um motivo para mudar, ou seja, ela deve ter apenas uma responsabilidade.
+</code></pre>
 <pre><code>//exemplo ruim: Problema: A classe Relatorio tem duas responsabilidades: gerar relatório e salvar em arquivo.
 class Relatorio {
     public void gerarRelatorio() {
@@ -718,7 +719,7 @@ class RelatorioArquivo {
 <p>Open/Closed Principle (OCP)
     🟠 <strong>Princípio Aberto/Fechado:</strong></p>
 </blockquote>
-<pre><code>Uma classe deve estar aberta para extensão, mas fechada para modificação.
+<pre><code> Uma classe deve estar aberta para extensão, mas fechada para modificação.
 </code></pre>
 <pre><code>//exemplo ruim: Toda vez que você quiser adicionar uma operação nova, precisa modificar a classe.
 class Calculadora {
@@ -846,7 +847,7 @@ class Robo implements Trabalhador {
 <p>Dependency Inversion Principle (DIP)
     🟠 <strong>Princípio da Inversão de Dependência:</strong></p>
 </blockquote>
-<pre><code>Dependa de abstrações, não de implementações concretas.
+<pre><code> Dependa de abstrações, não de implementações concretas.
 </code></pre>
 <pre><code>Exemplo ruim: UsuarioService depende de uma implementação concreta (MySQLDatabase).
 class MySQLDatabase {
