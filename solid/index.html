@@ -496,15 +496,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#http-verbs" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ HTTP Verbs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#principio-x-objetivo" class="md-nav__link">
     <span class="md-ellipsis">
       Princípio X Objetivo
@@ -691,7 +682,6 @@
 
 <h1 id="solid">🌿 SOLID</h1>
 <hr />
-<h2 id="http-verbs"><span style = "color:hotpink">✨ HTTP Verbs </span></h2>
 <blockquote>
 <p>Single Responsibility Principle (SRP)
     🟠 <strong>Princípio da Responsabilidade Única:</strong>
@@ -723,6 +713,7 @@ class RelatorioArquivo {
 //Cada classe tem uma única responsabilidade: gerar ou salvar.
 
 </code></pre>
+<hr />
 <blockquote>
 <p>Open/Closed Principle (OCP)
     🟠 <strong>Princípio Aberto/Fechado:</strong>
@@ -762,6 +753,7 @@ class Calculadora {
 Agora, para adicionar uma nova operação, basta criar uma nova classe que implemente Operacao, sem modificar a Calculadora.
 
 </code></pre>
+<hr />
 <blockquote>
 <p>Liskov Substitution Principle (LSP)
     🟠 <strong>Princípio da Substituição de Liskov:</strong>
@@ -801,6 +793,7 @@ class Pinguim implements Ave {
 //Cada classe implementa apenas o que faz sentido, evitando violações do LSP.
 
 </code></pre>
+<hr />
 <blockquote>
 <p>Interface Segregation Principle (ISP)
     🟠 <strong>Princípio da Segregação de Interfaces:</strong>
@@ -845,6 +838,7 @@ class Robo implements Trabalhador {
 //Agora as classes implementam apenas o que é relevante.
 
 </code></pre>
+<hr />
 <blockquote>
 <p>Dependency Inversion Principle (DIP)
     🟠 <strong>Princípio da Inversão de Dependência:</strong>
@@ -890,6 +884,7 @@ UsuarioService service = new UsuarioService(db);
 service.salvarUsuario();
 
 </code></pre>
+<hr />
 <h2 id="principio-x-objetivo">Princípio X Objetivo</h2>
 <ul>
 <li><strong>SRP</strong>   Uma classe = uma responsabilidade</li>
