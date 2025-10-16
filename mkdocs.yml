@@ -1,27 +1,42 @@
-site_name: Felipe Valboeno - [MkDocs]
+site_name: Felipe Valboeno - Desenvolvedor Java
 
+# Tema Material
 theme:
   name: material
-  logo: assets/logo2.png
+  logo: assets/coffee-cup.png
   palette:
     - scheme: default
-      primary: custom
-      accent: teal
-
-  custom_dir: overrides
+      primary: blue grey  # cor principal
+      accent: pink    # cor de destaque
+  font:
+    text: Roboto
+    code: Roboto Mono
+    headings: Montserrat
   features:
-    - navigation.tabs
+    - navigation.tabs       # tabs no topo
+    - navigation.sections   # permite colapsáveis e organização por seção
+    - toc.integrate         # TOC integrado na lateral
+    - navigation.expand     # expande a navegação automaticamente
+  custom_dir: overrides    # se tiver arquivos HTML/CSS personalizados
 
+# Navegação
 nav:
   - Home: index.md
   - Sobre mim: about.md
   - Base de Conhecimento:
       - Docker: docker.md
-      - API Quick Reference: api.md 
+      - API Quick Reference: api.md
+      - SOLID: solid.md
+  - Projetos Pessoais:
+      - Gestão de Vagas: gestaoVagas.md 
+      - Gerador de Certificado: gerador.md  
 
-
+# CSS personalizado
 extra_css:
   - custom.css
 
+# Extensões Markdown
 markdown_extensions:
   - attr_list
+  - admonition
+  - md_in_html

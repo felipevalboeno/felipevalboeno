@@ -1,17 +1,31 @@
-# Welcome to MkDocs
+<!-- Coloque isso dentro do arquivo .md onde quer mostrar as imagens -->
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org){:target="_blank"}.
+<div class="md-content">
+  <div class="md-content__inner md-typeset"> 
 
-## Commands
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+<div class="card-grid">
+  <a class="card" href="https://felipevalboeno.github.io/felipevalboeno/gestaoVagas/" target="_blank" rel="noopener noreferrer">
+    <div class="card-media">
+      <img src="images/c1.png" alt="Gestão de Vagas">
+    </div>
+    <div class="card-body">
+      <h3>APP Gestão de Vagas</h3>
+      <p>Projeto Java + SpringBoot.</p>
+    </div>
+  </a>
 
-## Project layout
+  <a class="card" href="https://felipevalboeno.github.io/felipevalboeno/geradorCertificado/" target="_blank" rel="noopener noreferrer">
+    <div class="card-media">
+      <img src="aimages/certificado.png" alt="Descrição 2">
+    </div>
+    <div class="card-body">
+      <h3>Link 2</h3>
+      <p>Descrição curta do link 2.</p>
+    </div>
+  </a>
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+  <!-- Repita quantos cards quiser -->
+</div>
+  </div>
+</div>
