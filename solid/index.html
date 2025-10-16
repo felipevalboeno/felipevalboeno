@@ -686,8 +686,7 @@
 <p>🟠  Single Responsibility Principle (SRP)
     <strong>Princípio da Responsabilidade Única:</strong></p>
 </blockquote>
-<pre><code>Uma classe deve ter apenas um motivo para mudar, ou seja, ela deve ter apenas uma responsabilidade.
-</code></pre>
+<p>Uma classe deve ter apenas um motivo para mudar, ou seja, ela deve ter apenas uma responsabilidade.</p>
 <pre><code>//exemplo ruim: Problema: A classe Relatorio tem duas responsabilidades: gerar relatório e salvar em arquivo.
 class Relatorio {
     public void gerarRelatorio() {
@@ -717,9 +716,10 @@ class RelatorioArquivo {
 <hr />
 <blockquote>
 <p>Open/Closed Principle (OCP)
-    🟠 <strong>Princípio Aberto/Fechado:</strong>
-        Uma classe deve estar aberta para extensão, mas fechada para modificação.</p>
+    🟠 <strong>Princípio Aberto/Fechado:</strong></p>
 </blockquote>
+<pre><code>Uma classe deve estar aberta para extensão, mas fechada para modificação.
+</code></pre>
 <pre><code>//exemplo ruim: Toda vez que você quiser adicionar uma operação nova, precisa modificar a classe.
 class Calculadora {
     public double calcular(String tipo, double a, double b) {
@@ -757,9 +757,10 @@ Agora, para adicionar uma nova operação, basta criar uma nova classe que imple
 <hr />
 <blockquote>
 <p>Liskov Substitution Principle (LSP)
-    🟠 <strong>Princípio da Substituição de Liskov:</strong>
-     - Classes derivadas devem poder ser substituídas por suas classes base sem quebrar o funcionamento do programa.</p>
+    🟠 <strong>Princípio da Substituição de Liskov:</strong></p>
 </blockquote>
+<pre><code> Classes derivadas devem poder ser substituídas por suas classes base sem quebrar o funcionamento do programa.
+</code></pre>
 <pre><code>Exemplo ruim:Pinguim não pode substituir Ave porque lança exceção ao chamar voar().
 
 class Ave {
@@ -797,9 +798,10 @@ class Pinguim implements Ave {
 <hr />
 <blockquote>
 <p>Interface Segregation Principle (ISP)
-    🟠 <strong>Princípio da Segregação de Interfaces:</strong>
-        Muitas interfaces específicas são melhores que uma interface única e genérica.</p>
+    🟠 <strong>Princípio da Segregação de Interfaces:</strong></p>
 </blockquote>
+<pre><code> Muitas interfaces específicas são melhores que uma interface única e genérica.
+</code></pre>
 <pre><code>Exemplo ruim: Robô não tira férias, mas é forçado a implementar.
 interface Trabalhador {
     void trabalhar();
@@ -842,9 +844,10 @@ class Robo implements Trabalhador {
 <hr />
 <blockquote>
 <p>Dependency Inversion Principle (DIP)
-    🟠 <strong>Princípio da Inversão de Dependência:</strong>
-        Dependa de abstrações, não de implementações concretas.</p>
+    🟠 <strong>Princípio da Inversão de Dependência:</strong></p>
 </blockquote>
+<pre><code>Dependa de abstrações, não de implementações concretas.
+</code></pre>
 <pre><code>Exemplo ruim: UsuarioService depende de uma implementação concreta (MySQLDatabase).
 class MySQLDatabase {
     public void salvar() {}
