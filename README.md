@@ -87,7 +87,7 @@
 Além da tecnologia, gosto de me dedicar a hobbies que estimulam criatividade e foco, como:
 
 - 📚 Leitura de livros sobre produtividade, desenvolvimento pessoal. Autor preferido de ficção: Dan Brown.
-- 🎧 Ouvir Rock, ou sons relaxantes enquanto trabalho.
+- 🎧 Ouvir Rock, ou sons relaxantes.
 - ⚽ Passeio com a esposa e nossas dogs.
 - 🎮 Jogos no PS5
 
