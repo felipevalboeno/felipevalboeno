@@ -1002,6 +1002,24 @@ public class AnimalService {
 <p><strong>map(entity -&gt; mapper.map(entity, AnimalResponse.class))</strong> //O map transforma cada elemento da stream em outro tipo, aqui transformamos cada AnimalEntity em um AnimalResponse</p>
 </li>
 <li>
+<p><strong>.Stream() Converte essa lista em um Stream</strong> — uma sequência de elementos que podem ser processados em cadeia.</p>
+</li>
+</ul>
+<p>Com isso, você pode aplicar operações como:</p>
+<ul>
+<li>
+<p>map() (transformar cada elemento)</p>
+</li>
+<li>
+<p>filter() (filtrar por uma condição)</p>
+</li>
+<li>
+<p>sorted() (ordenar)</p>
+</li>
+<li>
+<p>collect() (juntar o resultado final)</p>
+</li>
+<li>
 <p><strong>collect(Collectors.toList())</strong> //Converte a Stream de AnimalResponse de volta para uma Lista normal (List<AnimalResponse>).</p>
 </li>
 </ul>
