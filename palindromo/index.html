@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../docker/">
+        <link rel="prev" href="../solid/">
       
       
-        <link rel="next" href="../solid/">
+        <link rel="next" href="../gestaoVagas/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>API Quick Reference - Felipe Valboeno - Desenvolvedor Java</title>
+        <title>Palindromo - Felipe Valboeno - Desenvolvedor Java</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#api-quick-reference" class="md-skip">
+        <a href="#palindromo" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic" style=" background:#479bad">
           <span class="md-ellipsis">
             
-              API Quick Reference
+              Palindromo
             
           </span>
         </div>
@@ -460,32 +460,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    API Quick Reference
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
         
   
   
@@ -496,98 +474,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#http-verbs" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ HTTP Verbs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#http-status-codes" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ HTTP Status Codes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#response-headers" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ Response Headers
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api-design" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ API Design
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api-architectures" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ API Architectures
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api-design-patterns" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ API Design Patterns
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api-security" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ API Security
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api-testing" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✨ API Testing
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -620,10 +506,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../palindromo/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -634,6 +529,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -979,261 +875,133 @@
 
 
 
-<h1 id="api-quick-reference">🌿 API Quick Reference</h1>
-<hr />
-<h2 id="http-verbs"><span style = "color:hotpink">✨ HTTP Verbs </span></h2>
-<div class="admonition info">
-<p class="admonition-title">GET</p>
-<p>🟠 <strong>GET:</strong> Retrieve data from the server.</p>
-</div>
-<div class="admonition success">
-<p class="admonition-title">POST</p>
-<p>🟢 <strong>POST:</strong> Send data to the server to create a resource.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">PUT</p>
-<p>🔵 <strong>PUT:</strong> Send data to the server to update a resource.</p>
-</div>
-<div class="admonition danger">
-<p class="admonition-title">DELETE</p>
-<p>🔴 <strong>DELETE:</strong> Delete a resource from the server.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">PATCH</p>
-<p>🟠 <strong>PATCH:</strong> Send data to the server to update a resource partially.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">TRACE</p>
-<p>🟠 <strong>TRACE:</strong> Returns the full HTTP Request received by the server for debugging.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">OPTIONS</p>
-<p>🟠 <strong>OPTIONS:</strong> Returns the HTTP methods supported by the server for the request URL.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">CONNECT</p>
-<p>🟠 <strong>CONNECT:</strong> Converts the request connection to a transparent TCP/IP tunnel for secure communication.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">PURGE</p>
-<p>🟡 <strong>PURGE:</strong> Invalidates a cached resource.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">LOCK</p>
-<p>🟡 <strong>LOCK:</strong> Locks the resource for exclusive use by the client.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">UNLOCK</p>
-<p>🟡 <strong>UNLOCK:</strong> Unlocks the resource previously locked by the client.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">MKCOL</p>
-<p>🟠 <strong>MKCOL:</strong> Creates a new collection resource.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">COPY</p>
-<p>🟠 <strong>COPY:</strong> Copies the resource identified by the request-URI to the destination URI.</p>
-</div>
-<hr />
-<h2 id="http-status-codes">✨ HTTP Status Codes</h2>
-<div class="admonition info">
-<p class="admonition-title">Informational</p>
-<ul>
-<li><strong>100:</strong> Informational.</li>
-</ul>
-</div>
-<div class="admonition success">
-<p class="admonition-title">Success</p>
-<ul>
-<li><strong>200:</strong> Success.</li>
-</ul>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Redirection</p>
-<ul>
-<li><strong>300:</strong> Redirection.</li>
-</ul>
-</div>
-<div class="admonition danger">
-<p class="admonition-title">Client Errors</p>
-<ul>
-<li><strong>400:</strong> Client errors.</li>
-</ul>
-</div>
-<div class="admonition danger">
-<p class="admonition-title">Server Errors</p>
-<ul>
-<li><strong>500:</strong> Server errors.</li>
-</ul>
-</div>
-<hr />
-<h2 id="response-headers">✨ Response Headers</h2>
-<div class="admonition info">
-<p class="admonition-title">Content-type</p>
-<p>🟠 <strong>Content-type:</strong> Specifies the MIME type of the data in the response body.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Content-length</p>
-<p>🟠 <strong>Content-length:</strong> Specifies the length of the response body in bytes.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Cache-control</p>
-<p>🟠 <strong>Cache-control:</strong> Specifies the caching behavior of the response.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Location</p>
-<p>🟠 <strong>Location:</strong> Specifies the URI of a resource to retrieve the request resource.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Server</p>
-<p>🟠 <strong>Server:</strong> Name and version of the server software generating the response.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Access-control-allow-origin</p>
-<p>🟠 <strong>Access-control-allow-origin:</strong> Which origins are allowed to access the resource.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Set-cookie</p>
-<p>🟠 <strong>Set-cookie:</strong> Specifies a cookie to be stored by the client and sent back with future requests.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Expires</p>
-<p>🟠 <strong>Expires:</strong> Date/time after which the response is considered stale.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Last-modified</p>
-<p>🟠 <strong>Last-modified:</strong> Date/time that the resource was last modified.</p>
-</div>
-<hr />
-<h2 id="api-design">✨ API Design</h2>
-<div class="admonition info">
-<p class="admonition-title">REST</p>
-<p>🟠 <strong>REST:</strong> Representational State Transfer, a design pattern for building web services.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">SOAP</p>
-<p>🟠 <strong>SOAP:</strong> Simple Object Access Protocol, a messaging protocol for exchanging structured data.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">GraphQL</p>
-<p>🟠 <strong>GraphQL:</strong> A query language and runtime for building APIs.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">API Gateway</p>
-<p>🟠 <strong>API Gateway:</strong> A service that manages, protects, and scales APIs.</p>
-</div>
-<hr />
-<h2 id="api-architectures">✨ API Architectures</h2>
-<div class="admonition info">
-<p class="admonition-title">SOA</p>
-<p>🟠 <strong>SOA:</strong> Service-Oriented Architecture, a style for building distributed systems.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Microservices</p>
-<p>🟠 <strong>Microservices:</strong> An architectural style for building applications as a suite of small independent services.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Serverless</p>
-<p>🟠 <strong>Serverless:</strong> Cloud execution model where the provider manages infrastructure and resources automatically.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Event-Driven</p>
-<p>🟠 <strong>Event-Driven:</strong> Flow of data between components is triggered by events.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">RESTful API</p>
-<p>🟠 <strong>RESTful API:</strong> Uses HTTP requests to GET, POST, PUT, and DELETE data.</p>
-</div>
-<hr />
-<h2 id="api-design-patterns">✨ API Design Patterns</h2>
-<div class="admonition info">
-<p class="admonition-title">Adapter Pattern</p>
-<p>🟠 <strong>Adapter Pattern:</strong> Converts the interface of a class into another interface that clients expect.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Decorator Pattern</p>
-<p>🟠 <strong>Decorator Pattern:</strong> Adds behaviors to an individual object dynamically.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Proxy Pattern</p>
-<p>🟠 <strong>Proxy Pattern:</strong> Provides a surrogate or placeholder to control access to another object.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Chain of Responsibility</p>
-<p>🟠 <strong>Chain of Responsibility Pattern:</strong> Delegates commands to a chain of processing objects.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Observer Pattern</p>
-<p>🟠 <strong>Observer Pattern:</strong> Defines a one-to-many dependency between objects; dependents update automatically when the object changes.</p>
-</div>
-<hr />
-<h2 id="api-security">✨ API Security</h2>
-<div class="admonition info">
-<p class="admonition-title">OAuth</p>
-<p>🟠 <strong>OAuth:</strong> Open standard for authorization used for protecting APIs.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">JWT</p>
-<p>🟠 <strong>JWT:</strong> JSON Web Tokens, a standard for securely transmitting information between parties.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">SSL/TLS</p>
-<p>🟠 <strong>SSL/TLS:</strong> Protocol for establishing a secure connection between client and server.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">API Key</p>
-<p>🟠 <strong>API Key:</strong> Secret token limiting requests to an API over a period.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">OpenID Connect</p>
-<p>🟠 <strong>OpenID Connect:</strong> Authentication layer on top of OAuth for multi-domain user auth.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">CORS</p>
-<p>🟠 <strong>Cross-Origin Resource Sharing (CORS):</strong> Allows resources on a webpage to be requested from another domain.</p>
-</div>
-<hr />
-<h2 id="api-testing">✨ API Testing</h2>
-<div class="admonition info">
-<p class="admonition-title">Postman</p>
-<p>🟠 <strong>Postman:</strong> Popular tool for testing and debugging APIs.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">SoapUI</p>
-<p>🟠 <strong>SoapUI:</strong> Tool for testing SOAP and REST web services.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Swagger</p>
-<p>🟠 <strong>Swagger:</strong> Tool for designing, building, and testing APIs.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">JMeter</p>
-<p>🟠 <strong>JMeter:</strong> Tool for testing API performance.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">TestRail</p>
-<p>🟠 <strong>TestRail:</strong> Test management tool for planning, executing, and tracking API tests.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Dredd</p>
-<p>🟠 <strong>Dredd:</strong> Command-line tool for testing API documentation against backend implementation.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">REST Assured</p>
-<p>🟠 <strong>REST Assured:</strong> Java-based library for testing RESTful APIs.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Karate DSL</p>
-<p>🟠 <strong>Karate DSL:</strong> Testing framework for APIs using Gherkin syntax.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">HttpMaster</p>
-<p>🟠 <strong>HttpMaster:</strong> Tool for testing and debugging APIs.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Assertible</p>
-<p>🟠 <strong>Assertible:</strong> Tool for testing and monitoring APIs with automated tests.</p>
-</div>
+<h1 id="palindromo"><span style="color:green;">💼 <strong>Palindromo</strong></span></h1>
+<blockquote>
+<p>O que é um Palindromo?
+Palindromo é uma palavra que ao ser lida ao contratio, forma a mesma palavra. Ou seja, uma palvra que pode ser lida da esquerda pra direita ou vice-versa.</p>
+</blockquote>
+<p>Exemplos em java:</p>
+<pre><code>String texto = &quot;ana&quot;;
+texto = texto.toLowerCase();
+   char[] letras = texto.toCharArray();
+
+   boolean palindromo = true;
+
+    for (int i = 0, j = letras.length -1; i &lt; j; i++, j--){
+      if (letras[i] != letras[j]){
+
+        palindromo = false;
+        break;
+      }
+    }
+if(palindromo){
+System.out.println(&quot;É palindromo&quot;);
+  }else {
+  System.out.println(&quot;Não é palindromo&quot;);
+}
+
+
+</code></pre>
+<pre><code>String str = &quot;Radar&quot;;
+str = str.toUpperCase();
+        boolean isPalindrome = str.equals(new StringBuilder(str).reverse().toString());
+        System.out.println(isPalindrome);
+
+</code></pre>
+<pre><code>//tratando caso a palavra contenha letra maipuscula
+ String texto = &quot;Arara&quot;;
+
+texto = texto.toUpperCase();
+
+String inverso = new StringBuilder(texto).reverse().toString();
+
+if(texto.equals(inverso)){
+  System.out.println(&quot;É palindromo&quot;);
+}else{
+
+  System.out.println(&quot;Não é palindromo&quot;);
+}
+
+
+</code></pre>
+<pre><code>//criando palindromo utilizando método pilha 
+import java.util.Stack;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println(&quot;Iniciando teste de palíndromo...\n&quot;);
+
+        imprimeResultadoPalavra(&quot;ADA&quot;);
+        imprimeResultadoPalavra(&quot;ABCD&quot;);
+        imprimeResultadoPalavra(&quot;Ovovo&quot;);
+
+        System.out.println(&quot;\nFim da execução.&quot;);
+    }
+
+    public static void imprimeResultadoPalavra(String palavra) {
+        System.out.println(palavra + &quot; é palíndromo? &quot; + testaPalindromo(palavra));
+    }
+
+    public static boolean testaPalindromo(String palavra) {
+        Stack&lt;Character&gt; pilha = new Stack&lt;&gt;();
+
+        for (int i = 0; i &lt; palavra.length(); i++) {
+            pilha.add(palavra.charAt(i));
+        }
+
+        String palavraInversa = &quot;&quot;;
+
+        while (!pilha.isEmpty()) {
+            palavraInversa += pilha.pop();
+        }
+
+        return palavraInversa.equalsIgnoreCase(palavra);
+    }
+}
+
+
+
+</code></pre>
+<pre><code>//tratando caso a palavra contenha espaços
+
+String texto = &quot;A rar  a&quot;;
+texto = texto.replaceAll(&quot;\\s+&quot;, &quot;&quot;).toLowerCase();
+
+
+String inverso = new StringBuilder(texto).reverse().toString();
+
+if(texto.equals(inverso)){
+  System.out.println(&quot;É palindromo&quot;);
+}else{
+
+  System.out.println(&quot;Não é palindromo&quot;);
+}
+
+
+</code></pre>
+<pre><code>// Tratando caso a palavra contenha acentuações
+
+ String texto = &quot;á raR  a&quot;;
+
+
+texto = Normalizer
+          .normalize(texto, Normalizer.Form.NFD)
+          .replaceAll(&quot;[^\\p{ASCII}]&quot;, &quot;&quot;) // remove acentos
+          .replaceAll(&quot;[^a-zA-Z0-9]&quot;, &quot;&quot;)  // remove espaços e pontuação
+          .toLowerCase();
+
+String inverso = new StringBuilder(texto).reverse().toString();
+
+if(texto.equals(inverso)){
+  System.out.println(&quot;É palindromo&quot;);
+}else{
+
+  System.out.println(&quot;Não é palindromo&quot;);
+}
+
+
+</code></pre>
 
 
 
