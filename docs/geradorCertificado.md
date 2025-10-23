@@ -1,5 +1,9 @@
 # <span style="color:green;">💼 **Projeto Angular: Gerador de certificado**</span>
 
+## <span style = "color:green">Demonstração do Projeto</span>
+
+![Descrição do GIF](videos/gerador_certificado.gif)
+
 > 🎓 **Descrição Geral**
 
 Este projeto, faz parte do curso introdutório de Angular da Rocketseat, com 10h de duração.
@@ -22,6 +26,3 @@ Este projeto, faz parte do curso introdutório de Angular da Rocketseat, com 10h
 ## 💻 Link da aplicação no Netlify para teste em produção
 [Acesse o projeto em produção](https://geradorcertificadomalchika.netlify.app)
 
-## <span style = "color:green">Demonstração do Projeto</span>
-
-![Descrição do GIF](videos/gerador_certificado.gif)

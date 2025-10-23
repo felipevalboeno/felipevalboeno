@@ -27,10 +27,22 @@ nav:
       - Docker: docker.md
       - API Quick Reference: api.md
       - SOLID: solid.md
+      - Palindromo: palindromo.md 
   - Projetos Pessoais:
       - Gestão de Vagas: gestaoVagas.md 
-      - Gerador de Certificado: gerador.md  
-
+      - Gerador de Certificado: geradorCertificado.md  
+      - CRUD Cursos: crud_cursos.md
+      - Strip Pagamento: pagamento_stripe.md
+  - Metodologias:
+      - 4DX: 4dx.md 
+  - Práticas de Programação:
+      - ModelMapper: mapper.md
+      - GarbageCollector: gc.md
+      - Final, Finalize, Finally: final.md
+      - Transactional: transactional.md
+      - Interface x Abstract Class: interclass.md
+         
+      
 # CSS personalizado
 extra_css:
   - custom.css

@@ -1,33 +1,47 @@
-# 👋 Olá, eu sou o Felipe Valboeno!
-Sou desenvolvedor Java com foco em aplicações Spring Boot, APIs RESTful e integração com banco de dados. Apaixonado por aprender novas tecnologias e resolver problemas com código limpo e bem estruturado.
+# 👋 Olá, eu sou o <span style="color:#00bfa5">Felipe Valboeno</span>!
 
-## 🚀 Tecnologias que uso
-- Java | Spring Boot | JPA | Hibernate
-- JavaScript |
-- Git | GitHub | GitLab
-- SQL | MySQL | PostgreSQL
-- BPMN, Docker, Grafana
+<div align="center">
+  <img src="https://raw.githubusercontent.com/felipevalboeno/assets/main/coffee3.png"
+       width="400"
+       style="border-radius:50%; box-shadow:0 0 15px rgba(0,0,0,0.25);"
+       alt="Felipe Valboeno">
+</div>
 
-## 📌 Projetos em destaque
-- [Projeto SpringBoot](https://github.com/felipevalboeno/workshop-springboot4-jpa){:target="_blank"}: Trata-se de um projeto de prática e estudo das tecnologias SpringBoot, JPA/Hibernate utilizando o banco de dados em memória H2 para os testes.
-- [API de Produtos](https://github.com/felipevalboeno/workshop-backend-restfull){:target="_blank"}: Trata-se de um projeto base de CRUD completo com SpringBoot feito no vsCode. Muito útil para iniciantes terem uma base de CRUD no padrão MVC com Spring.
 
-- ## 🏢 Empresas onde já atuei
-- **Paschoalotto** – Estagiário de MIS (Sistemas de Informações Gerenciais)
-- **Stone Co. Linx** – Análise de Suporte
-- **Lecom Tecnologia** – Programador
 
-## 🎯 Interesses pessoais
+> 💻 **Desenvolvedor Java | Spring Boot | APIs REST | Banco de Dados**
 
-Além da tecnologia, gosto de me dedicar a hobbies que estimulam criatividade e foco, como:
+Sou apaixonado por criar aplicações escaláveis e bem estruturadas.  
+Gosto de resolver problemas com **código limpo**, **boas práticas** e **arquiteturas sólidas**.
 
-- 📚 Leitura de livros sobre produtividade, desenvolvimento pessoal. Autor preferido de ficção: Dan Brown.
-- 🎧 Ouvir Rock, ou sons relaxantes enquanto trabalho.
-- ⚽ Passeio com a esposa e nossas dogs.
-- 🎮 Jogos no PS5
+---
 
-Acredito que manter o equilíbrio entre a vida pessoal e profissional é essencial para uma carreira sustentável e criativa.
+## 🧭 Um pouco da minha jornada
 
-## 📫 Como me encontrar
-- Email: felipevalboeno@hotmail.com
--  [-> Meu LinkedIn](https://www.linkedin.com/in/fvalboeno/){:target="_blank"}
+> Sabia que quase fui **geofísico**? 😅  
+> Pois é! Cursei mais de um ano de **Geofísica na Universidade Federal do Pampa (RS)**.  
+> Depois de muitas horas no sol estudando afloramentos, percebi que minha verdadeira paixão era a **programação**.
+> Também tive contato com **Matlab** na faculdade, o que me fez mergulhar de vez no mundo da computação.
+
+🎓 Sou **formado em Ciência da Computação**, e meu **TCC** foi sobre  
+> _Aprendizado de Máquina Explicável Aplicado na Classificação de Sintomas da Depressão._
+
+---
+
+## ☕ Fora do código...
+
+Quando não estou programando, gosto de:
+- ✏️ **Desenhar**
+- 🎮 **Jogar no PS5**
+- 🎬 **Assistir filmes de terror**
+- 🌿 **Explorar a natureza**
+
+> Acredito que um bom desenvolvedor também precisa se inspirar fora da tela. 😉
+
+---
+
+<div align="center">
+
+💬 _"Código limpo é poesia em movimento."_ 
+
+</div>
