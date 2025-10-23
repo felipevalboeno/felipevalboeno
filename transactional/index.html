@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../mapper/">
+        <link rel="prev" href="../final/">
       
-      
-        <link rel="next" href="../final/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>GarbageCollector - Felipe Valboeno - Desenvolvedor Java</title>
+        <title>Transactional - Felipe Valboeno - Desenvolvedor Java</title>
       
     
     
@@ -74,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#garbage-collector" class="md-skip">
+        <a href="#transactional" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic" style=" background:#479bad">
           <span class="md-ellipsis">
             
-              GarbageCollector
+              Transactional
             
           </span>
         </div>
@@ -823,19 +821,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../gc/" class="md-nav__link">
         
   
   
@@ -846,7 +835,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -879,10 +867,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../transactional/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -893,6 +890,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -921,79 +919,62 @@
 
 
 
-<h1 id="garbage-collector"><span style="color:green;">💼 <strong>Garbage Collector</strong></span></h1>
+<h1 id="transactional"><span style="color:green;">💼 <strong>@Transactional</strong></span></h1>
 <blockquote>
-<p>O que é o GarbageCollector?</p>
+<p>Pra que serve o @Transactional ?
+A anotação @Transactional serve para controlar transações de banco de dados de forma automática.</p>
 </blockquote>
-<p>O Garbage Collector é o coletor de lixo do Java. Surgiu na versão 1.0 de 1995. Um garbage(lixo) é qualquer objeto instanciado que não é usado mais pelo programa. </p>
-<p>🟢 Exempo:</p>
-<pre><code>String nome = new String(&quot;Felipe&quot;);
--&gt; Criado o objeto Felipe na memória, do tipo String.
+<p>Ou seja, ela garante que um bloco de operações SQL (ou JPA):</p>
+<ul>
+<li>
+<p>só será confirmado (commit) se tudo der certo,</p>
+</li>
+<li>
+<p>e será desfeito (rollback) se alguma exceção acontecer.</p>
+</li>
+</ul>
+<p>Exemplo:</p>
+<pre><code>@Service
+public class ContaService {
 
-nome = new String(&quot;Ana&quot;);
--&gt; A Variável nome passou a apontar para o objeto &quot;Ana&quot;
+    @Autowired
+    private ContaRepository repository;
 
-O objeto &quot;Felipe&quot; virou um garbage = lixo de memória.
+    @Transactional
+    public void transferir(Long origemId, Long destinoId, double valor) {
 
-</code></pre>
-<p>O garbage collector (GC) é um processo automático do Java que roda em segundo plano. Ele encontra os objetos que não possuem mais referência, apaga eles, e reorganiza a memória pra evitar fragmentação.</p>
-<p>Antes de excluir um objeto da memória, ele chama um método chamado finalize(). Vejamos um exemplo de como chamar o GC explicitamente. </p>
-<pre><code>public class Main {
+        Conta origem = repository.findById(origemId).orElseThrow();
+        Conta destino = repository.findById(destinoId).orElseThrow();
 
-    static class Pessoa {
-        private String nome;
+        origem.setSaldo(origem.getSaldo() - valor);
+        destino.setSaldo(destino.getSaldo() + valor);
 
-        public Pessoa(String nome) {
-            this.nome = nome;
-        }
+        repository.save(origem);
+        repository.save(destino);
 
-        // Método chamado pelo Garbage Collector ANTES de remover o objeto
-        @Override
-        protected void finalize() throws Throwable {
-            System.out.println(&quot;🗑️ Objeto Pessoa \&quot;&quot; + nome + &quot;\&quot; foi coletado pelo Garbage Collector!&quot;);
-        }
-    }
-
-    public static void main(String[] args) {
-        System.out.println(&quot;🚀 Criando pessoas...&quot;);
-
-        for (int i = 1; i &lt;= 5; i++) {
-            Pessoa p = new Pessoa(&quot;Pessoa &quot; + i);
-            // Depois do loop, 'p' será sobrescrita e os objetos antigos ficam sem referência
-        }
-
-        System.out.println(&quot;👋 Perdemos as referências para os objetos Pessoa.&quot;);
-        System.out.println(&quot;💭 Sugerindo execução do Garbage Collector...\n&quot;);
-
-        // Sugerimos a execução do GC
-        System.gc();
-
-        // Espera um pouco pra dar tempo do GC agir
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        System.out.println(&quot;\n✅ Programa finalizado!&quot;);
+        // Se der erro aqui, tudo é desfeito (rollback)
     }
 }
 
-</code></pre>
-<p>A saída seria assim:</p>
-<pre><code>Criando pessoas...
-Perdemos as referências para os objetos Pessoa.
-Sugerindo execução do Garbage Collector...
-
-Objeto Pessoa &quot;Pessoa 5&quot; foi coletado pelo Garbage Collector!
-Objeto Pessoa &quot;Pessoa 4&quot; foi coletado pelo Garbage Collector!
-Objeto Pessoa &quot;Pessoa 3&quot; foi coletado pelo Garbage Collector!
-Objeto Pessoa &quot;Pessoa 2&quot; foi coletado pelo Garbage Collector!
-Objeto Pessoa &quot;Pessoa 1&quot; foi coletado pelo Garbage Collector!
-
- Programa finalizado!
 
 </code></pre>
+<ul>
+<li>
+<p>Se tudo correr bem → o Spring faz COMMIT.</p>
+</li>
+<li>
+<p>Se lançar uma exceção (ex: RuntimeException) → o Spring faz ROLLBACK automático, ou seja, nenhuma das alterações é gravada no banco.</p>
+</li>
+</ul>
+<p>É quase a mesma ideia do que usar o START TRANSACTION no MySql, por exemplo:</p>
+<pre><code>START TRANSACTION;
+
+UPDATE conta SET saldo = saldo - 100 WHERE id = 1;
+UPDATE conta SET saldo = saldo + 100 WHERE id = 2;
+
+COMMIT;
+</code></pre>
+<p>Você tem o poder de desfazer essa transação antes do commit. O ideal é fazer o update, checar se deu tudo certo, e por fim dar um commit, mas se algo der errado dentro do bloco da transação, será feito um rollback automático de tudo dentro do bloco. Porém, sevocê commitou no final e ocorreu tudo bem, não é possível dar rollback mais.</p>
 
 
 
