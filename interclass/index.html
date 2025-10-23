@@ -944,9 +944,9 @@
 
 <h1 id="interface-x-classe-abstrata"><span style="color:green;">💼 <strong>Interface x Classe Abstrata</strong></span></h1>
 <blockquote>
-<p>Interface:
-É como um contrato que define o que uma classe deve fazer, ou seja, quais métodos ela precisa implementar. Ela não contém a lógica de implementação dos métodos Interfaces permitem herança múltipla, então uma classe pode implementar várias interfaces ao mesmo tempo. Um bom exemplo de prática de Polimorfismo.</p>
+<p>Interface:</p>
 </blockquote>
+<p>É como um contrato que define o que uma classe deve fazer, ou seja, quais métodos ela precisa implementar. Ela não contém a lógica de implementação dos métodos Interfaces permitem herança múltipla, então uma classe pode implementar várias interfaces ao mesmo tempo. Um bom exemplo de prática de Polimorfismo.</p>
 <p>Como várias classes diferentes podem implementar a mesma interface, você consegue tratar objetos diferentes de forma uniforme → isso é polimorfismo.</p>
 <p>Exemplo:</p>
 <pre><code>public interface ClienteRepository extends JpaRepository&lt;Cliente, Long&gt; {
@@ -965,9 +965,9 @@
 </li>
 </ul>
 <blockquote>
-<p>Classe Abstrata:
-Uma classe abstrata é uma classe que pode ter métodos abstratos (sem corpo) e métodos concretos (com implementação). Ela serve como modelo base para outras classes, permitindo compartilhar código comum. Diferente da interface, uma classe abstrata só pode ser estendida por uma única classe. Um bom exemplo de herança.</p>
+<p>Classe Abstrata:</p>
 </blockquote>
+<p>Uma classe abstrata é uma classe que pode ter métodos abstratos (sem corpo) e métodos concretos (com implementação). Ela serve como modelo base para outras classes, permitindo compartilhar código comum. Diferente da interface, uma classe abstrata só pode ser estendida por uma única classe. Um bom exemplo de herança.</p>
 <p>Uma classe abstrata serve como modelo base. Sendo chamada de superclasse, e quem a estende é chamada de subclasse.
 Através da palavra super(), chamamos o construtor da superclasse.</p>
 <pre><code>public abstract class Animal {
