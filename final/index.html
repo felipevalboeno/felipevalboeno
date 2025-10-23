@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../4dx/">
+        <link rel="prev" href="../gc/">
       
-      
-        <link rel="next" href="../gc/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>ModelMapper - Felipe Valboeno - Desenvolvedor Java</title>
+        <title>Final, Finalize, Finally - Felipe Valboeno - Desenvolvedor Java</title>
       
     
     
@@ -74,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#model-mapper" class="md-skip">
+        <a href="#quais-as-diferencas-entre-final-finally-e-finalize-em-java" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic" style=" background:#479bad">
           <span class="md-ellipsis">
             
-              ModelMapper
+              Final, Finalize, Finally
             
           </span>
         </div>
@@ -295,7 +293,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../mapper/" class="md-tabs__link">
           
   
   
@@ -800,32 +798,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    ModelMapper
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../mapper/" class="md-nav__link">
         
   
   
@@ -836,35 +812,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#conclusao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusão
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -897,10 +844,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../final/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -911,6 +867,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -939,138 +896,88 @@
 
 
 
-<h1 id="model-mapper"><span style="color:green;">💼 <strong>Model Mapper</strong></span></h1>
+<h1 id="quais-as-diferencas-entre-final-finally-e-finalize-em-java"><span style="color:green;">💼 *<em>Quais as diferenças entre final, finally e finalize em Java?</em></span></h1>
 <blockquote>
-<p>De onde veio o ModelMapper e pra que serve?</p>
+<p>Finally
+O finally é um bloco utilizado junto com tratamento de exceções como try e catch. Serve para executar um trecho que código, independende se vai dar erro ou não, e liberar recursos no final(como fechar conexões e arquivos). Visto isso, O bloco finally é muito usado para fechar conexões com banco de dados, arquivos, streams, ou qualquer recurso que precisa ser liberado manualmente.</p>
 </blockquote>
-<p>O ModelMapper, surgiu por volta de 2011. É uma biblioteca Java, criada pra facilitar o mapeamento entre objetos.
-Se você vai trabalhar com entidades, DTO's, requests e reponses, vale a pena entender e considerar o uso dessa biblioteca, pois ela vai te livrar de adicionar campo a campo durante a criação de um objeto da entidade no DTO de response. Ou seja, te livra de fazer esse mapeamento manualmente. O ModelMapper tem cérebro, diferente do  BeanUtils.copyProperties, ele possui capacidades mais flexíveis como a conversão de variáveis, sendo uma ótima escolha para projetos maiores e mais complexos.</p>
-<hr />
-<blockquote>
-<p>Como utilizar o ModelMapper?</p>
-</blockquote>
-<p>🟢 1- No seu projeto, o primeiro passo será adicionar a dependência dele no <strong>pom.xml</strong></p>
-<pre><code>&lt;dependency&gt;
-    &lt;groupId&gt;org.modelmapper&lt;/groupId&gt;
-    &lt;artifactId&gt;modelmapper&lt;/artifactId&gt;
-    &lt;version&gt;3.2.0&lt;/version&gt;
-&lt;/dependency&gt;
-
-</code></pre>
-<p>🟢 2- Crie um Bean global para o ModelMapper, evitando criar uma nova instancia (mapper = new modelMapper()) em cada service.</p>
-<pre><code>@Configuration
-public class AppConfig {
-
-    @Bean
-    public ModelMapper modelMapper() {
-        return new ModelMapper();
-    }
+<p><strong>Exemplo do finally abaixo, de um trecho de método que faz leitura de arquivo:</strong></p>
+<pre><code>try {
+    FileReader reader = new FileReader(&quot;dados.txt&quot;);
+    // Lê o arquivo
+} catch (IOException e) {
+    System.out.println(&quot;Erro ao ler arquivo: &quot; + e.getMessage());
+} finally {
+    System.out.println(&quot;Fechando recursos...&quot;);
+    // Fecha o arquivo (se aberto)
 }
 
 </code></pre>
-<p>🟢 3- Agora, vamos supor que você tem um <strong>Service</strong>, que faz parte de um CRUD de animais, e você tem o método listar, para listar os animais cadstrados.</p>
-<pre><code>@Service
-public class AnimalService {
+<p><strong>Exemplo do finally com conexão JDBC:</strong></p>
+<pre><code>Connection conn = null;
+PreparedStatement stmt = null;
+ResultSet rs = null;
 
-    @Autowired
-    private AnimalRepository repository;
+try {
+    conn = DriverManager.getConnection(&quot;jdbc:mysql://localhost/db&quot;, &quot;user&quot;, &quot;senha&quot;);
+    stmt = conn.prepareStatement(&quot;SELECT * FROM cliente&quot;);
+    rs = stmt.executeQuery();
 
-    public List&lt;AnimalResponse&gt; listar() {
-        List&lt;AnimalEntity&gt; entities = repository.findAll();
-        List&lt;AnimalResponse&gt; response = new ArrayList&lt;&gt;();
+    while (rs.next()) {
+        System.out.println(rs.getString(&quot;nome&quot;));
+    }
 
-        for (AnimalEntity e : entities) {
-            AnimalResponse res = new AnimalResponse();
+} catch (SQLException e) {
+    e.printStackTrace();
 
-            // Mapeamento manual campo a campo
-            res.setId(e.getId());
-            res.setNome(e.getNome());
-            res.setAniversario(e.getAniversario());
-            res.setEspecie(e.getEspecie());
-            res.setTutor(e.getTutor());
-
-            response.add(res);
-        }
-
-        return response;
+} finally {
+    try {
+        if (rs != null) rs.close();
+        if (stmt != null) stmt.close();
+        if (conn != null) conn.close();
+        System.out.println(&quot;Conexão fechada com sucesso!&quot;);
+    } catch (SQLException e) {
+        e.printStackTrace();
     }
 }
 
-</code></pre>
-<p>Note que fazemos o mapeamento da response de forma manual, mas com o Model Mapper isso não é necessário.
-Veja como fica usando o mapper abaixo:</p>
-<pre><code>@Service
-public class AnimalService {
-
-    @Autowired
-    private AnimalRepository repository;
-
-    @Autowired
-    private ModelMapper mapper;
-
-    // Listar todos os animais
-    public List&lt;AnimalResponse&gt; listarAnimal() {
-        return repository.findAll()
-                .stream() 
-                .map(entity -&gt; mapper.map(entity, AnimalResponse.class)) 
-                .collect(Collectors.toList()); 
-    }
 
 </code></pre>
+<p><strong>Atenção!</strong> - Desde o Java 7, surgiu o try-with-resources, que é uma forma mais moderna e limpa de fazer a mesma coisa — sem precisar do finally.</p>
+<blockquote>
+<p>Finalize
+O finalize() é um método especial que o garbage collector chama antes de destruir um objeto, para permitir limpar recursos não gerenciados (como arquivos ou conexões nativas).</p>
+</blockquote>
+<p>Mas <strong>é obsoleto</strong> (deprecated desde o Java 9 e removido no Java 18), porque:</p>
 <ul>
 <li>
-<p><strong>return repository.findAll()</strong> //Chama o método do Spring Data JPA que retorna todas as entidades AnimalEntity do banco</p>
+<p>O GC não garante quando (ou se) o finalize() será chamado.</p>
 </li>
 <li>
-<p><strong>map(entity -&gt; mapper.map(entity, AnimalResponse.class))</strong> //O map transforma cada elemento da stream em outro tipo, aqui transformamos cada AnimalEntity em um AnimalResponse</p>
-</li>
-<li>
-<p><strong>.Stream() Converte essa lista em um Stream</strong> — uma sequência de elementos que podem ser processados em cadeia.</p>
+<p>Pode causar vazamentos de memória ou lentidão.</p>
 </li>
 </ul>
-<p>Com isso, você pode aplicar operações como:</p>
-<ul>
-<li>
-<p>map() (transformar cada elemento)</p>
-</li>
-<li>
-<p>filter() (filtrar por uma condição)</p>
-</li>
-<li>
-<p>sorted() (ordenar)</p>
-</li>
-<li>
-<p>collect() (juntar o resultado final)</p>
-</li>
-<li>
-<p><strong>collect(Collectors.toList())</strong> //Converte a Stream de AnimalResponse de volta para uma Lista normal (List<AnimalResponse>).</p>
-</li>
-</ul>
-<p>Ou como seria usando o BeanUtil:</p>
-<pre><code>@Service
-public class AnimalService {
-
-
-    @Autowired
-    private AnimalRepository repository;
-
-    public List&lt;AnimalResponse&gt; listarAnimal(){
-        List&lt;AnimalEntity&gt; entities = repository.findAll();
-        List&lt;AnimalResponse&gt; response = new ArrayList&lt;&gt;();
-
-        for(AnimalEntity e : entities){
-            AnimalResponse res = new AnimalResponse();
-            BeanUtils.copyProperties(e, res);
-            response.add(res);
-        }
-
-        return response;
-    }
+<p>Exemplo do finalize:</p>
+<pre><code>@Override
+protected void finalize() throws Throwable {
+    System.out.println(&quot;Objeto sendo destruído...&quot;);
+}
 
 </code></pre>
-<h2 id="conclusao">Conclusão</h2>
-<p>Você pode e deve considerar utilizar o ModelMapper para mapeamento entre entidades em seus projetos dependendo do escopo deles.
-Pesquise mais sobre essa biblioteca e facilite sua vida como desenvolvedor ;)</p>
+<blockquote>
+<p>final
+É uma  Palavra-chave (modificador), que pode ser usado para variáveis, classes ou métodos.</p>
+</blockquote>
+<ul>
+<li>final class: Não pode ser herdada.</li>
+<li>final variable:  Não pode ter o valor alterado depois de atribuído.</li>
+<li>final method: Não pode ser sobrescrito por subclasses.</li>
+</ul>
+<p>Exemplo:</p>
+<pre><code>final int x = 10;   // valor fixo
+final class Pessoa {}  // não pode ser herdada
+
+</code></pre>
 
 
 
