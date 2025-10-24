@@ -946,9 +946,9 @@
 
 <h1 id="quais-as-diferencas-entre-final-finally-e-finalize-em-java"><span style="color:green;">💼 <strong>Quais as diferenças entre final, finally e finalize em Java?</strong></span></h1>
 <blockquote>
-<p>Finally
-O finally é um bloco utilizado junto com tratamento de exceções como try e catch. Serve para executar um trecho que código, independende se vai dar erro ou não, e liberar recursos no final(como fechar conexões e arquivos). Visto isso, O bloco finally é muito usado para fechar conexões com banco de dados, arquivos, streams, ou qualquer recurso que precisa ser liberado manualmente.</p>
+<p>Finally</p>
 </blockquote>
+<p>O finally é um bloco utilizado junto com tratamento de exceções como try e catch. Serve para executar um trecho que código, independende se vai dar erro ou não, e liberar recursos no final(como fechar conexões e arquivos). Visto isso, O bloco finally é muito usado para fechar conexões com banco de dados, arquivos, streams, ou qualquer recurso que precisa ser liberado manualmente.</p>
 <p><strong>Exemplo do finally abaixo, de um trecho de método que faz leitura de arquivo:</strong></p>
 <pre><code>try {
     FileReader reader = new FileReader(&quot;dados.txt&quot;);
@@ -993,9 +993,9 @@ try {
 </code></pre>
 <p><strong>Atenção!</strong> - Desde o Java 7, surgiu o try-with-resources, que é uma forma mais moderna e limpa de fazer a mesma coisa — sem precisar do finally.</p>
 <blockquote>
-<p>Finalize
-O finalize() é um método especial que o garbage collector chama antes de destruir um objeto, para permitir limpar recursos não gerenciados (como arquivos ou conexões nativas).</p>
+<p>Finalize</p>
 </blockquote>
+<p>O finalize() é um método especial que o garbage collector chama antes de destruir um objeto, para permitir limpar recursos não gerenciados (como arquivos ou conexões nativas).</p>
 <p>Mas <strong>é obsoleto</strong> (deprecated desde o Java 9 e removido no Java 18), porque:</p>
 <ul>
 <li>
@@ -1013,9 +1013,9 @@ protected void finalize() throws Throwable {
 
 </code></pre>
 <blockquote>
-<p>final
-É uma  Palavra-chave (modificador), que pode ser usado para variáveis, classes ou métodos.</p>
+<p>final</p>
 </blockquote>
+<p>É uma  Palavra-chave (modificador), que pode ser usado para variáveis, classes ou métodos.</p>
 <ul>
 <li>final class: Não pode ser herdada.</li>
 <li>final variable:  Não pode ter o valor alterado depois de atribuído.</li>
