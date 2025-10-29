@@ -1,6 +1,7 @@
 # <span style="color:green;">💼 **Quais as diferenças entre final, finally e finalize em Java?**</span>
 
 > Finally
+
 O finally é um bloco utilizado junto com tratamento de exceções como try e catch. Serve para executar um trecho que código, independende se vai dar erro ou não, e liberar recursos no final(como fechar conexões e arquivos). Visto isso, O bloco finally é muito usado para fechar conexões com banco de dados, arquivos, streams, ou qualquer recurso que precisa ser liberado manualmente.
 
 **Exemplo do finally abaixo, de um trecho de método que faz leitura de arquivo:**
@@ -55,6 +56,7 @@ try {
 
 
 > Finalize
+
 O finalize() é um método especial que o garbage collector chama antes de destruir um objeto, para permitir limpar recursos não gerenciados (como arquivos ou conexões nativas).
 
 Mas **é obsoleto** (deprecated desde o Java 9 e removido no Java 18), porque:
@@ -74,6 +76,7 @@ protected void finalize() throws Throwable {
 ```
 
 > final
+
 É uma  Palavra-chave (modificador), que pode ser usado para variáveis, classes ou métodos.
 
 -   final class: Não pode ser herdada.

@@ -5,9 +5,13 @@ on:
     branches:
       - main  # dispara quando der push na branch main
 
+permissions:
+  contents: write  # 👈 necessário para permitir push no gh-pages
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
 
