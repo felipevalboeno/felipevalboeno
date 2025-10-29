@@ -57,7 +57,7 @@
   </tr>
 </table>
 
-
+  <!--
 <div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/felipevalboeno/felipevalboeno/output/github-contribution-grid-snake-dark.svg" />
@@ -66,7 +66,7 @@
 </picture>
 
 </div>
-
+-->
 
 ## 📌 Projetos em destaque
 - [Projeto Gestão de Vagas](https://felipevalboeno.github.io/felipevalboeno/gestaoVagas/): Este projeto foi desenvolvido utilizando o Spring Framework e a linguagem Java, abordando conceitos essenciais da Programação Orientada a Objetos (POO) e boas práticas de arquitetura. O sistema tem como objetivo oferecer uma plataforma de cadastro e gerenciamento de vagas de tecnologia.
