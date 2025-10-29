@@ -14,10 +14,12 @@
       <p> Vamos conversar?</p>
      <p style="display: flex; gap: 15px; align-items: center; padding: 10px 15px; border-radius: 8px; width: fit-content;">
   <a href="mailto:felipevalboeno@gmail.com" target="_blank" style="text-decoration: none;">
-    <img src="https://github.com/felipevalboeno/assets/blob/main/gmail.png" alt="Email" width="24" height="24"  ">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Ícone Gmail" width="40" height="40" />
+
   </a>
   <a href="https://www.linkedin.com/in/fvalboeno/" target="_blank" style="text-decoration: none;">
-    <img src="https://github.com/felipevalboeno/assets/blob/main/linkedin.png" alt="LinkedIn" width="24" height="24" ">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn icon" width="40" height="40" />
+
   </a>
 </p>
 
