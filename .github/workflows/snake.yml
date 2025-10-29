@@ -1,4 +1,4 @@
-name: Generate GitHub Contribution Snake
+name: Generate Snake
 
 on:
   schedule:
@@ -20,15 +20,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2️⃣ Gera os SVGs do Snake (normal + dark)
+      # 2️⃣ Cria pasta dist caso não exista
+      - name: Create dist folder
+        run: mkdir -p dist
+
+      # 3️⃣ Gera os SVGs do Snake (normal + dark)
       - name: Generate github-contribution-grid-snake
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: felipevalboeno
-          output: dist/github-contribution-grid-snake.svg
-          output_dark: dist/github-contribution-grid-snake-dark.svg
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg
 
-      # 3️⃣ Faz deploy para a branch 'output'
+      # 4️⃣ Faz deploy para a branch 'output'
       - name: Deploy to output branch
         uses: JamesIves/github-pages-deploy-action@v4
         with:
