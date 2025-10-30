@@ -41,6 +41,7 @@ nav:
       - Final, Finalize, Finally: final.md
       - Transactional: transactional.md
       - Interface x Abstract Class: interclass.md
+      - Java Collection Framework: jcf.md
          
       
 # CSS personalizado

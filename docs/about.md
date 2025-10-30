@@ -1,11 +1,6 @@
 # 👋 Olá, eu sou o <span style="color:#00bfa5">Felipe Valboeno</span>!
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/felipevalboeno/assets/main/coffee3.png"
-       width="400"
-       style="border-radius:50%; box-shadow:0 0 15px rgba(0,0,0,0.25);"
-       alt="Felipe Valboeno">
-</div>
+
 
 
 
