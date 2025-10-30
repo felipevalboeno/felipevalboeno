@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../gc/">
+        <link rel="prev" href="../interclass/">
       
-      
-        <link rel="next" href="../transactional/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>Final, Finalize, Finally - Felipe Valboeno - Desenvolvedor Java</title>
+        <title>Java Collection Framework - Felipe Valboeno - Desenvolvedor Java</title>
       
     
     
@@ -74,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#quais-as-diferencas-entre-final-finally-e-finalize-em-java" class="md-skip">
+        <a href="#java-collection-framework" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic" style=" background:#479bad">
           <span class="md-ellipsis">
             
-              Final, Finalize, Finally
+              Java Collection Framework
             
           </span>
         </div>
@@ -846,19 +844,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../final/" class="md-nav__link">
         
   
   
@@ -869,7 +858,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -925,10 +913,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../jcf/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Java Collection Framework
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -939,6 +949,179 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resumo-visual-estruturado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resumo visual estruturado
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟢 List
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🟢 List">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principais-formas-de-implementacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principais formas de Implementação:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quando-usar-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quando usar List?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quando-usar-arraylist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quando usar ArrayList:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quando-usar-linkedlist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quando usar LinkedList:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟢 Set
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🟢 Set">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principais-formas-de-implementacao_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principais formas de Implementação:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quando-usar-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quando usar Set?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quando-usar-hashset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quando usar HashSet?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quando-usar-linkedhashset" class="md-nav__link">
+    <span class="md-ellipsis">
+      quando usar LinkedHashSet?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quando-usar-o-treeset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quando usar o TreeSet?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#map" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟢 Map
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🟢 Map">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principais-formas-de-implementacao_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principais formas de Implementação:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quando-usar-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quando usar Map?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -967,86 +1150,314 @@
 
 
 
-<h1 id="quais-as-diferencas-entre-final-finally-e-finalize-em-java"><span style="color:green;">💼 <strong>Quais as diferenças entre final, finally e finalize em Java?</strong></span></h1>
+<h1 id="java-collection-framework"><span style="color:green;">💼 <strong>Java Collection Framework?</strong></span></h1>
 <blockquote>
-<p>Finally</p>
+<p>🟢 O que é o JCF (Java Collection Framework)?</p>
 </blockquote>
-<p>O finally é um bloco utilizado junto com tratamento de exceções como try e catch. Serve para executar um trecho que código, independende se vai dar erro ou não, e liberar recursos no final(como fechar conexões e arquivos). Visto isso, O bloco finally é muito usado para fechar conexões com banco de dados, arquivos, streams, ou qualquer recurso que precisa ser liberado manualmente.</p>
-<p><strong>Exemplo do finally abaixo, de um trecho de método que faz leitura de arquivo:</strong></p>
-<pre><code>try {
-    FileReader reader = new FileReader(&quot;dados.txt&quot;);
-    // Lê o arquivo
-} catch (IOException e) {
-    System.out.println(&quot;Erro ao ler arquivo: &quot; + e.getMessage());
-} finally {
-    System.out.println(&quot;Fechando recursos...&quot;);
-    // Fecha o arquivo (se aberto)
-}
-
-</code></pre>
-<p><strong>Exemplo do finally com conexão JDBC:</strong></p>
-<pre><code>Connection conn = null;
-PreparedStatement stmt = null;
-ResultSet rs = null;
-
-try {
-    conn = DriverManager.getConnection(&quot;jdbc:mysql://localhost/db&quot;, &quot;user&quot;, &quot;senha&quot;);
-    stmt = conn.prepareStatement(&quot;SELECT * FROM cliente&quot;);
-    rs = stmt.executeQuery();
-
-    while (rs.next()) {
-        System.out.println(rs.getString(&quot;nome&quot;));
-    }
-
-} catch (SQLException e) {
-    e.printStackTrace();
-
-} finally {
-    try {
-        if (rs != null) rs.close();
-        if (stmt != null) stmt.close();
-        if (conn != null) conn.close();
-        System.out.println(&quot;Conexão fechada com sucesso!&quot;);
-    } catch (SQLException e) {
-        e.printStackTrace();
-    }
-}
-
-
-</code></pre>
-<p><strong>Atenção!</strong> - Desde o Java 7, surgiu o try-with-resources, que é uma forma mais moderna e limpa de fazer a mesma coisa — sem precisar do finally.</p>
-<blockquote>
-<p>Finalize</p>
-</blockquote>
-<p>O finalize() é um método especial que o garbage collector chama antes de destruir um objeto, para permitir limpar recursos não gerenciados (como arquivos ou conexões nativas).</p>
-<p>Mas <strong>é obsoleto</strong> (deprecated desde o Java 9 e removido no Java 18), porque:</p>
+<p>A JCF é um sistema completo de estrutura de dados do java, está dentro do pacote Java.util, e possui conjuntos de interfaces, classes e algorítmos para manipular grupos de objetos (como listas, conjuntos, filas e mapas).</p>
+<p>Portanto, a JCF engloba as estruturas abaixo da seguinte forma:</p>
 <ul>
 <li>
-<p>O GC não garante quando (ou se) o finalize() será chamado.</p>
+<p>Interfaces: Definem o que as coleções podem fazer -&gt; Collection, List, Set, Map, Queue</p>
 </li>
 <li>
-<p>Pode causar vazamentos de memória ou lentidão.</p>
+<p>Classes Concretas: Implementam as interfaces com diferentes estruturas. -&gt; ArrayList, HashSet, LinkedList</p>
+</li>
+<li>
+<p>Classes utilitárias: Oferecem métodos prontos para manipular coleções. -&gt; Collections, Arrays</p>
+</li>
+<li>
+<p>Acesso e ordenação: Ajudam a  percorrer e a ordenar dados. -&gt; Iterator, Comparator</p>
 </li>
 </ul>
-<p>Exemplo do finalize:</p>
-<pre><code>@Override
-protected void finalize() throws Throwable {
-    System.out.println(&quot;Objeto sendo destruído...&quot;);
-}
+<h2 id="resumo-visual-estruturado">Resumo visual estruturado</h2>
+<pre><code>          Iterable
+              |
+          Collection
+       /      |       \
+     List     Set     Queue        &lt;-- Interfaces
+       |        |        |
+ ArrayList  HashSet  LinkedList    &lt;-- Classes concretas
+       |
+  Collections / Arrays             &lt;-- Classes utilitárias
+       |
+   Iterator / Comparator            &lt;-- Acesso e ordenação
+
 
 </code></pre>
-<blockquote>
-<p>final</p>
-</blockquote>
-<p>É uma  Palavra-chave (modificador), que pode ser usado para variáveis, classes ou métodos.</p>
+<h2 id="list">🟢 <strong>List</strong></h2>
+<p>É uma lista <strong>ordenada</strong> que aceita <strong>elementos repetidos</strong>. Guarda os elementos na ordem de inserção através de <strong>índices</strong>, começando do índice zero.</p>
+<h3 id="principais-formas-de-implementacao">Principais formas de Implementação:</h3>
 <ul>
-<li>final class: Não pode ser herdada.</li>
-<li>final variable:  Não pode ter o valor alterado depois de atribuído.</li>
-<li>final method: Não pode ser sobrescrito por subclasses.</li>
+<li>
+<p><strong>ArrayList:</strong> Mais rápido para leitura, porém mais lento para inserção/remoção no meio, pois precisa empurrar os elementos dentro do array.</p>
+</li>
+<li>
+<p><strong>LinkedList:</strong> Mais rápido para inserção/remoção no meio, mais lento para leitura. Ele não empurra os elementos, mas sim troca a referência dele.</p>
+</li>
 </ul>
-<p>Exemplo:</p>
-<pre><code>final int x = 10;   // valor fixo
-final class Pessoa {}  // não pode ser herdada
+<h3 id="quando-usar-list">Quando usar List?</h3>
+<p>Quando a ordem importar e pode haver repetição.</p>
+<p>```
+ import java.util.ArrayList;</p>
+<p>public class ExemploArrayList {
+    public static void main(String[] args) {
+        // Criação de um ArrayList
+        ArrayList<String> alunos = new ArrayList&lt;&gt;();</p>
+<pre><code>    // Adicionando elementos
+    alunos.add("Ana");
+    alunos.add("Carlos");
+    alunos.add("Beatriz");
+
+    // Inserindo em uma posição específica
+    alunos.add(1, "Diego");
+
+    // Acessando elementos pelo índice
+    System.out.println("Aluno na posição 2: " + alunos.get(2));
+
+    // Percorrendo com for-each
+    System.out.println("Lista de alunos:");
+    for (String nome : alunos) {
+        System.out.println(nome);
+    }
+
+    // Removendo um elemento
+    alunos.remove("Carlos");
+
+    System.out.println("\nApós remoção:");
+    System.out.println(alunos);
+}
+</code></pre>
+<p>}</p>
+<p>Saída esperada:
+Aluno na posição 2: Beatriz
+Lista de alunos:
+Ana
+Diego
+Carlos
+Beatriz</p>
+<p>Após remoção:
+[Ana, Diego, Beatriz]</p>
+<p>```</p>
+<h3 id="quando-usar-arraylist">Quando usar ArrayList:</h3>
+<ul>
+<li>
+<p>Quando você precisa de acesso rápido por índice.</p>
+</li>
+<li>
+<p>Quando faz mais leituras do que inserções/remoções.</p>
+</li>
+</ul>
+<pre><code>import java.util.LinkedList;
+import java.util.Queue;
+
+public class ExemploLinkedList {
+    public static void main(String[] args) {
+        // Usando LinkedList como uma fila (Queue)
+        Queue&lt;String&gt; fila = new LinkedList&lt;&gt;();
+
+        // Adicionando pessoas à fila
+        fila.add(&quot;João&quot;);
+        fila.add(&quot;Maria&quot;);
+        fila.add(&quot;Pedro&quot;);
+
+        System.out.println(&quot;Fila inicial: &quot; + fila);
+
+        // Atendendo (removendo o primeiro)
+        String atendido = fila.poll();
+        System.out.println(&quot;Atendendo: &quot; + atendido);
+
+        // Ver quem é o próximo
+        System.out.println(&quot;Próximo da fila: &quot; + fila.peek());
+
+        System.out.println(&quot;Fila final: &quot; + fila);
+    }
+}
+
+Saída esperada:
+Fila inicial: [João, Maria, Pedro]
+Atendendo: João
+Próximo da fila: Maria
+Fila final: [Maria, Pedro]
+
+
+</code></pre>
+<h3 id="quando-usar-linkedlist">Quando usar LinkedList:</h3>
+<ul>
+<li>
+<p>Quando você precisa inserir ou remover com frequência (principalmente no início/fim).</p>
+</li>
+<li>
+<p>Quando usa estrutura de fila (Queue) ou pilha (Stack).</p>
+</li>
+</ul>
+<h2 id="set">🟢 <strong>Set</strong></h2>
+<p>Essa interface não permite elementos repetidos, guardando então elementos únicos e sem índice. A ordem aqui, depende de como você implementa.</p>
+<h3 id="principais-formas-de-implementacao_1">Principais formas de Implementação:</h3>
+<ul>
+<li>
+<p><strong>HashSet:</strong> Mais rápido e não garante ordem.</p>
+</li>
+<li>
+<p><strong>LinkedHashSet:</strong> Mantém a orde de inserção.</p>
+</li>
+<li>
+<p><strong>TreeSet:</strong> Mantém os elementos em ordem crescente.</p>
+</li>
+</ul>
+<h3 id="quando-usar-set">Quando usar Set?</h3>
+<p>Use o Set quando não puder haver duplicatas.</p>
+<pre><code>import java.util.HashSet;
+
+public class ExemploHashSet {
+    public static void main(String[] args) {
+        HashSet&lt;String&gt; frutas = new HashSet&lt;&gt;();
+
+        frutas.add(&quot;Banana&quot;);
+        frutas.add(&quot;Maçã&quot;);
+        frutas.add(&quot;Uva&quot;);
+        frutas.add(&quot;Laranja&quot;);
+        frutas.add(&quot;Maçã&quot;); // duplicado — será ignorado
+
+        System.out.println(&quot;HashSet:&quot;);
+        for (String fruta : frutas) {
+            System.out.println(fruta);
+        }
+    }
+}
+
+Saída esperada:
+
+HashSet:
+
+Uva
+
+Maçã
+
+Banana
+
+Laranja
+
+</code></pre>
+<h3 id="quando-usar-hashset">Quando usar HashSet?</h3>
+<p>Quando prescisar verificar a existência de elementos rapidamente.</p>
+<pre><code>
+import java.util.LinkedHashSet;
+
+public class ExemploLinkedHashSet {
+    public static void main(String[] args) {
+        LinkedHashSet&lt;String&gt; cidades = new LinkedHashSet&lt;&gt;();
+
+        cidades.add(&quot;São Paulo&quot;);
+        cidades.add(&quot;Rio de Janeiro&quot;);
+        cidades.add(&quot;Curitiba&quot;);
+        cidades.add(&quot;Fortaleza&quot;);
+        cidades.add(&quot;Curitiba&quot;); // duplicado — ignorado
+
+        System.out.println(&quot;LinkedHashSet:&quot;);
+        for (String cidade : cidades) {
+            System.out.println(cidade);
+        }
+    }
+}
+
+Saída esperada:
+
+LinkedHashSet:
+
+São Paulo
+
+Rio de Janeiro
+
+Curitiba
+
+Fortaleza
+
+</code></pre>
+<h3 id="quando-usar-linkedhashset">quando usar LinkedHashSet?</h3>
+<p>Quando você quer unicidade + previsibilidade de ordem, pois ele manter a ordem que os elementos foram adicionados.</p>
+<pre><code>import java.util.TreeSet;
+
+public class ExemploTreeSet {
+    public static void main(String[] args) {
+        TreeSet&lt;String&gt; nomes = new TreeSet&lt;&gt;();
+
+        nomes.add(&quot;Carlos&quot;);
+        nomes.add(&quot;Ana&quot;);
+        nomes.add(&quot;Pedro&quot;);
+        nomes.add(&quot;Bruna&quot;);
+        nomes.add(&quot;Ana&quot;); // duplicado — ignorado
+
+        System.out.println(&quot;TreeSet (ordem alfabética):&quot;);
+        for (String nome : nomes) {
+            System.out.println(nome);
+        }
+    }
+}
+
+Saída esperada:
+
+TreeSet (ordem alfabética):
+
+Ana
+
+Bruna
+
+Carlos
+
+Pedro
+
+</code></pre>
+<h3 id="quando-usar-o-treeset">Quando usar o TreeSet?</h3>
+<p>Ideal para listas classificadas sem duplicação e sempre ordenadas.</p>
+<h2 id="map">🟢 <strong>Map</strong></h2>
+<p>Essa interface trabalha numa estrutura de pares, sendo eles a <strong>chave -&gt; valor</strong> (1-Felipe).
+Cada chave é única, mas os valores podem se repetir e o acesso aos elementos é feito por meio da chave.</p>
+<h3 id="principais-formas-de-implementacao_2">Principais formas de Implementação:</h3>
+<ul>
+<li>
+<p><strong>HashMap:</strong> Mais rápido e sem ordem.</p>
+</li>
+<li>
+<p><strong>LinkedHashMap:</strong> Mantém a ordem de inserção.</p>
+</li>
+<li>
+<p><strong>TreeMap:</strong> Mantém os elementos em ordem crescente, ordenando pela chave.</p>
+</li>
+</ul>
+<h3 id="quando-usar-map">Quando usar Map?</h3>
+<p>Sempre que quiser associar uma chave a um valor — como se fosse um dicionário ou tabela de busca.</p>
+<pre><code>import java.util.*;
+
+public class ComparacaoMaps {
+    public static void main(String[] args) {
+        Map&lt;String, Integer&gt; hashMap = new HashMap&lt;&gt;();
+        Map&lt;String, Integer&gt; linkedHashMap = new LinkedHashMap&lt;&gt;();
+        Map&lt;String, Integer&gt; treeMap = new TreeMap&lt;&gt;();
+
+        List&lt;String&gt; chaves = Arrays.asList(&quot;C&quot;, &quot;A&quot;, &quot;B&quot;, &quot;E&quot;, &quot;D&quot;);
+
+        int valor = 1;
+        for (String chave : chaves) {
+            hashMap.put(chave, valor);
+            linkedHashMap.put(chave, valor);
+            treeMap.put(chave, valor);
+            valor++;
+        }
+
+        System.out.println(&quot;HashMap:       &quot; + hashMap);
+        System.out.println(&quot;LinkedHashMap: &quot; + linkedHashMap);
+        System.out.println(&quot;TreeMap:       &quot; + treeMap);
+    }
+}
+
+Saída esperada:
+
+HashMap:       {A=2, B=3, C=1, D=5, E=4}
+
+LinkedHashMap: {C=1, A=2, B=3, E=4, D=5}
+
+TreeMap:       {A=2, B=3, C=1, D=5, E=4}
 
 </code></pre>
 
