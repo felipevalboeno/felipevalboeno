@@ -34,7 +34,7 @@ List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6);
 
 ## Resumindo...
 
-<img src="images/stream.png" alt="Stream" width="300">
+![Stream](images/stream.png){ width="300" }
 
 
 Imagine que numeros é uma fila de caixinhas com números dentro:
