@@ -42,6 +42,7 @@ nav:
       - Transactional: transactional.md
       - Interface x Abstract Class: interclass.md
       - Java Collection Framework: jcf.md
+      - Streams: stream.md
          
       
 # CSS personalizado
