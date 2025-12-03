@@ -10,6 +10,7 @@
     <img src="https://img.shields.io/badge/lang-English-blue?style=flat-square&logo=github" alt="English">
   </a>
 </p> -->
+<!-->sobre mim<-->
  <h1>👋 About me</h1>
  <br>
 <p> I'm a Java backend Developer, with emphasis on RESTful APIs, Spring Boot and data bases MySql. Throughout my career, I was the only responsible for the development improvments of a big client, which allowed me to learn how to deal with clients in meetings and requirements gathering. Furthermore, I trained clients and improved the platform usage for a specific client by over 30% through an improvement I developed, rendering HTML images in a Java integration, that motivated the client to implement in several new processes. In addition, I managed the releases of the Spring Boot projects and verified all changes before deployment to production.   </p>
