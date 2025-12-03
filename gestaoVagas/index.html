@@ -1,0 +1,1575 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../palindromo/">
+      
+      
+        <link rel="next" href="../geradorCertificado/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Gestão de Vagas - Felipe Valboeno - Desenvolvedor Java</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#gestao-de-vagas-projeto-spring-boot" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header" >
+  <nav class="md-header__inner md-grid" aria-label="Header" >
+    <a href=".." title="Felipe Valboeno - Desenvolvedor Java" class="md-header__button md-logo" aria-label="Felipe Valboeno - Desenvolvedor Java" data-md-component="logo" >
+      
+  <img src="../assets/coffee-cup.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer"  >
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title" >
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Felipe Valboeno - Desenvolvedor Java
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic" style=" background:#479bad">
+          <span class="md-ellipsis">
+            
+              Gestão de Vagas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="pink"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Sobre mim
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../docker/" class="md-tabs__link">
+          
+  
+  
+  Base de Conhecimento
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Projetos Pessoais
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../4dx/" class="md-tabs__link">
+          
+  
+  
+  Metodologias
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../mapper/" class="md-tabs__link">
+          
+  
+  
+  Práticas de Programação
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Felipe Valboeno - Desenvolvedor Java" class="md-nav__button md-logo" aria-label="Felipe Valboeno - Desenvolvedor Java" data-md-component="logo">
+      
+  <img src="../assets/coffee-cup.png" alt="logo">
+
+    </a>
+    Felipe Valboeno - Desenvolvedor Java
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sobre mim
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Base de Conhecimento
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Base de Conhecimento
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Quick Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../solid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SOLID
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../palindromo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Palindromo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projetos Pessoais
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Projetos Pessoais
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestão de Vagas
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestão de Vagas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#demonstracao-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Demonstração do Projeto
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Demonstração do Projeto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#boas-praticas-em-programacao-orientadaa-objetos-utilizadas-nesse-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        # Boas práticas em programação Orientadaa Objetos utilizadas nesse projeto
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ferramentas-de-monitoramento-utilizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        # 📈Ferramentas de monitoramento utilizadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docmentacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Docmentação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Docmentação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Endpoints:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#back-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Back-end
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Back-end">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fluxo-de-atualizacao-de-vagas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏗 Fluxo de Atualização de Vagas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estrutura-do-projeto-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estrutura do projeto BackEnd
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../geradorCertificado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gerador de Certificado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crud_cursos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CRUD Cursos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pagamento_stripe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Strip Pagamento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metodologias
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Metodologias
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4dx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4DX
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Práticas de Programação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Práticas de Programação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mapper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModelMapper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GarbageCollector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../final/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Final, Finalize, Finally
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../transactional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transactional
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interclass/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interface x Abstract Class
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jcf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java Collection Framework
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stream/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Streams
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="gestao-de-vagas-projeto-spring-boot"><span style="color:green;">💼 <strong>Gestão de Vagas — Projeto Spring Boot</strong></span></h1>
+<blockquote>
+<p>🚀 <strong>Descrição Geral</strong></p>
+</blockquote>
+<p>Este projeto foi desenvolvido utilizando o <strong>Spring Framework</strong> e a linguagem <strong>Java</strong>, abordando conceitos essenciais da <strong>Programação Orientada a Objetos (POO)</strong> e boas práticas de arquitetura.<br />
+O sistema tem como objetivo oferecer uma <strong>plataforma de cadastro e gerenciamento de vagas de tecnologia</strong>, onde:</p>
+<ul>
+<li>🏢 <strong>Empresas</strong> podem realizar seu cadastro e publicar vagas.  </li>
+<li>👩‍💻 <strong>Candidatos</strong> podem criar perfis, visualizar oportunidades e se candidatar.</li>
+</ul>
+<hr />
+<blockquote>
+<p>🧩 <strong>Principais Tecnologias e Recursos Utilizados</strong></p>
+</blockquote>
+<ul>
+<li><strong>Spring Boot</strong>, <strong>Spring Security</strong>, <strong>Spring Data JPA</strong></li>
+<li><strong>Thymeleaf</strong> integrado com <strong>TailwindCSS</strong> (Front-end)</li>
+<li><strong>Swagger</strong> para documentação dos endpoints</li>
+<li><strong>JUnit</strong> e <strong>Mockito</strong> para testes unitários</li>
+<li><strong>Prometheus</strong> para monitoramento da aplicação</li>
+<li><strong>Princípios SOLID</strong> e boas práticas de clean code</li>
+</ul>
+<hr />
+<blockquote>
+<p>🐳 <strong>Infraestrutura e Deploy</strong></p>
+</blockquote>
+<p>A aplicação é totalmente conteinerizada com <strong>Docker</strong>, utilizando imagens hospedadas no <strong>DockerHub</strong>, e foi implantada na <strong>AWS (EC2 e RDS)</strong>.  </p>
+<p>Além disso:
+- ⚙️ Foram configurados <strong>GitHub Actions</strong> para CI/CD.
+- 🔐 As <strong>secrets e variáveis de ambiente</strong> são gerenciadas via GitHub.
+- 🌐 Conexão com o <strong>RDS</strong> (MySQL) feita diretamente via extensão de banco de dados no VS Code.</p>
+<blockquote>
+<p>Exemplo de host usado na conexão:</p>
+</blockquote>
+<pre><code class="language-bash">db-gestao-vagas.c96cuumyu0ti.us-east-2.rds.amazonaws.com
+</code></pre>
+<h2 id="demonstracao-do-projeto"><span style = "color:green">Demonstração do Projeto</span></h2>
+<p><img alt="Descrição do GIF" src="../videos/gestao_vagas.gif" /></p>
+<hr />
+<h3 id="boas-praticas-em-programacao-orientadaa-objetos-utilizadas-nesse-projeto"># <span style="color:orange;"><strong>Boas práticas em programação Orientadaa Objetos utilizadas nesse projeto</strong></span></h3>
+<ul>
+<li>Single Responsability (SOLID)  </li>
+<li>KISS  </li>
+<li>YAGNI  </li>
+<li>Unit tests  </li>
+<li>Integration tests  </li>
+<li>JavaDoc</li>
+</ul>
+<hr />
+<h2 id="ferramentas-de-monitoramento-utilizadas"># <span style="color:orange;">📈<strong>Ferramentas de monitoramento utilizadas</strong></span></h2>
+<p>Nesse projeto utilizei apenas o Prometheus no final. Teste os endpoints:</p>
+<ul>
+<li><a href="http://3.139.102.156:8080/actuator/health">Health</a></li>
+<li><a href="http://3.139.102.156:8080/actuator/metrics">Metrics</a></li>
+<li><a href="http://3.139.102.156:8080/actuator/prometheus">Prometheus</a></li>
+</ul>
+<p>Obs: devido a limitações de hardware, precisei retirar o Grafana do projeto até expandir meu SSD pra utilizar maiores imagens no docker.</p>
+<hr />
+<h2 id="docmentacao"><span style="color:orange;"><strong>Docmentação</strong></span></h2>
+<p>Swagger documentation:</p>
+<ul>
+<li><a href="http://3.139.102.156:8080/swagger-ui/index.html#/">Swagger UI</a></li>
+</ul>
+<h3 id="endpoints"><strong>Endpoints</strong>:</h3>
+<ul>
+<li>Job listing</li>
+<li>Job registration</li>
+<li>Delete job</li>
+<li>Candidate Auth</li>
+<li>Job Apply</li>
+<li>Candidate profile</li>
+<li>Candidate Register</li>
+<li>Job listing by candidate</li>
+<li>Company register</li>
+<li>Auth company</li>
+</ul>
+<p><strong>Swagger endpoints</strong></p>
+<p><img alt="swagger" src="../images/s1.png" /></p>
+<p><img alt="swagger" src="../images/s2.png" /></p>
+<p><img alt="swagger" src="../images/s3.png" /></p>
+<hr />
+<h2 id="back-end"><span style = "color:green"> <strong>Back-end</strong> </span></h2>
+<ul>
+<li>Java  </li>
+<li>SpringBoot</li>
+</ul>
+<h3 id="fluxo-de-atualizacao-de-vagas">🏗 Fluxo de Atualização de Vagas</h3>
+<p><span style="color:blue;">👤 Cliente / Frontend</span> <br />
+- HTTP Request (GET, POST, PUT, DELETE)  </p>
+<p>👇</p>
+<p><span style="color:green;">📝 Controller (JobController)</span><br />
+- Recebe request<br />
+- Valida input / DTO<br />
+- Pega companyId / path params / headers<br />
+- Chama Use Case correspondente  </p>
+<p>👇</p>
+<p><span style="color:orange;">⚙️ Use Case</span><br />
+- Lógica de negócio<br />
+- Valida regras<br />
+- Prepara entidade<br />
+- Chama Repository  </p>
+<p>👇</p>
+<p><span style="color:purple;">💾 Repository (JobRepository)</span><br />
+- Acessa banco de dados<br />
+- Cria, atualiza, deleta ou busca dados  </p>
+<h3 id="estrutura-do-projeto-backend">Estrutura do projeto BackEnd</h3>
+<pre><code>├── src/main/java/br/com/felipevalboeno/gestao_vagas/
+│ ├── config/
+│ ├── exceptions/
+│ ├── modules/
+│ │ ├── candidate/
+│ │ │ └── controllers
+│ │ │ └── dto
+│ │ │ └── entity
+│ │ │ └── repository
+│ │ │ └── useCases
+│ │ ├── company/
+│ │ │ └── controllers
+│ │ │ └── dto
+│ │ │ └── entity
+│ │ │ └── repository
+│ │ │ └── useCasess
+│ │ └── ...
+│ ├── providers/
+│ └── security/
+└── application.properties
+</code></pre>
+<hr />
+<h1 id="front-end"><span style="color:orange;"><strong>Front-end</strong></span></h1>
+<ul>
+<li>Tailwind  </li>
+<li>RestTemplate para conectar com o backend</li>
+</ul>
+<h1 id="pages"><span style="color:orange;"><strong>Pages</strong></span></h1>
+<h3 id="candidato">Candidato</h3>
+<p><img alt="candidate" src="../images/c1.png" />
+<img alt="candidate" src="../images/c2.png" />
+<img alt="candidate" src="../images/c3.png" />
+<img alt="candidate" src="../images/c4.png" />
+<img alt="candidate" src="../images/c5.png" /></p>
+<h3 id="empresa">Empresa</h3>
+<p><img alt="company" src="../images/e1.png" />
+<img alt="company" src="../images/e2.png" />
+<img alt="company" src="../images/e3.png" />
+<img alt="company" src="../images/e4.png" /></p>
+<hr />
+<h1 id="deploy-com-render"><span style="color:orange;"><strong> Deploy com Render</strong></span></h1>
+<p>Pra subir essa aplicação, usei o Render (cloud hosting) por ter uma versão grátis pra estudo.</p>
+<h2 id="como-fazer-isso">Como fazer isso?</h2>
+<ul>
+<li>Faça login no Render usando sua conta do GitHub</li>
+<li>Faça as primeiras configurações simples, como configurar nome, banco de dados...</li>
+<li>Crie um dockerfile no seu projeto com a configuração do dockerfile config vista mais abaixo.</li>
+<li>Crie umnovo web service no Render, e faça o deploy com seu último commit no git.</li>
+</ul>
+<pre><code># =========================
+# Stage 1: Build
+# =========================
+FROM maven:3.9.3-eclipse-temurin-17 AS build
+
+# Define diretório de trabalho
+WORKDIR /app
+
+# Copia apenas o pom.xml para cache do Maven
+COPY pom.xml .
+
+# Baixa dependências sem reconstruir código
+RUN mvn dependency:go-offline -B
+
+# Copia o código-fonte
+COPY src ./src
+
+# Build do projeto, gera o .jar
+RUN mvn clean package -DskipTests
+
+# =========================
+# Stage 2: Runtime
+# =========================
+FROM openjdk:17-jdk-slim
+
+# Define diretório de trabalho
+WORKDIR /app
+
+# Copia o .jar do stage de build
+COPY --from=build /app/target/gestao_vagas-0.0.1-SNAPSHOT.jar app.jar
+
+# Expõe a porta do Spring Boot
+EXPOSE 8080
+
+# Comando para rodar a aplicação
+ENTRYPOINT [&quot;java&quot;, &quot;-jar&quot;, &quot;app.jar&quot;]
+
+
+ENTRYPOINT [ &quot;java&quot;, &quot;-jar&quot;, &quot;app.jar&quot; ]
+</code></pre>
+<hr />
+<h2 id="criando-um-banco-de-dados-e-webserver-na-aws-com-rds-e-ec2"><span style="color:orange;"><strong> Criando um banco de dados e webserver na AWS com RDS e EC2</strong></span></h2>
+<ul>
+<li>Crie uma conta na Amazon AWS </li>
+<li>Pesquise por RDS e vá em criar banco de dados  </li>
+<li>Escolhaa standard creation &gt; PostgreSQL &gt; Models: Free tier &gt; Create database  </li>
+<li>Pesquise por EC2  </li>
+<li>AMI - Kernel6.1 - free &gt; Instance: t3.MICRO - free  </li>
+<li>Crie um par de chaves: RSA &gt; .pem  </li>
+<li>Execute a instancia e faça a conexão</li>
+</ul>
+<hr />
+<h1 id="criando-dockerhub"><span style="color:orange;"><strong> Criando DockerHub</strong></span></h1>
+<ul>
+<li>Com o DockerHub, você pode salvar uma imagem pronta pra uso da sua aplicação, da mesma forma que você salva seu código no GitHub.</li>
+<li>Você só precisa de um arquivo .yml na raiz do seu projeto, o meu ficou assim:</li>
+</ul>
+<pre><code>name: Gestão de Vagas Application
+on: 
+    push:
+        branches: [main]
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v3
+            - name: Set up Java
+              uses: actions/setup-java@v3
+              with:
+                distribution: temurin
+                java-version: 17
+            - name: Build project
+              run: mvn clean install
+            - name: login docker
+              run: docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}}
+            - name: Build docker image
+              run: docker build -t felipevalboenodocker/gestao_vagas .
+            - name: Publish image
+              run: docker push felipevalboenodocker/gestao_vagas        
+</code></pre>
+<hr />
+<h3 id="obs">OBS:</h3>
+<ul>
+<li>I used Putty to configure the Docker on EC2 AWS.</li>
+<li>I used a Database Client extension to conect a new postgrSQL to EC2 endpoint, and I change the DTABASE_URL on github to this new database that I create.</li>
+</ul>
+<hr />
+<h2 id="how-to-start-the-application-after-all-this-configurations">How to start the application after all this configurations</h2>
+<ol>
+<li>Open your Putty app</li>
+<li>Connect on the saved session </li>
+<li>execute: cd ~/actions-runner</li>
+<li>Check on your github if the runner ar online, if not, execute: ./run.sh</li>
+<li>execute: docker start gestao-vagas </li>
+<li>execute: docker ps </li>
+<li>execute: docker logs gestao_vagas , check if the application started as well</li>
+<li>Open Swagger: http://<public_ec2_ip>:8080/swagger-ui/index.html an do a test.</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.expand"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

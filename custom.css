@@ -1,0 +1,148 @@
+:root {
+  --md-primary-fg-color: #2e2e2c;
+}
+
+.md-header {
+  background-color: var(--md-primary-fg-color) !important;
+}
+
+.md-tabs {
+  background-color: #6a2287 !important;
+}
+
+.md-header__topic .md-ellipsis {
+  background-color: var(--md-primary-fg-color);
+  color: white; /* opcional, para melhorar contraste */
+}
+
+
+
+/* Ocultar item ativo do menu lateral, se desejar ativar depois */
+/*
+.md-nav__item--active {
+  display: none !important;
+}
+*/
+
+
+/* Alert boxes do Material */
+.md-typeset .admonition-info {
+  background-color: #f0fff4;
+  border-left: 4px solid #32cd32; /* verde */
+}
+
+.md-typeset .admonition-success {
+  background-color: #f0f9ff;
+  border-left: 4px solid #00bfff; /* azul */
+}
+
+.md-typeset .admonition-warning {
+  background-color: #fffaf0;
+  border-left: 4px solid #ffa500; /* laranja */
+}
+
+.md-typeset .admonition-danger {
+  background-color: #fff0f0;
+  border-left: 4px solid #ff4500; /* vermelho */
+}
+
+
+
+
+
+[data-md-color-scheme="slate"][data-md-page="index"] .md-content {
+  background: linear-gradient(
+    135deg,
+    rgba(10, 60, 40, 0.4),
+    rgba(5, 30, 20, 0.5)
+  );
+}
+
+
+
+
+/* docs/assets/css/extra.css */
+
+.card-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:1rem;
+  margin: 0 -0.5rem;
+}
+
+
+
+/* Card container */
+.card{
+  display:block;
+  width: calc(33.333% - 1rem); /* 3 colunas em telas grandes */
+  text-decoration:none;
+  color: inherit;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--md-sys-surface, #fff);
+  box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+  transition: transform .22s ease, box-shadow .22s ease;
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+/* Ajuste responsivo */
+@media (max-width: 900px){
+  .card { width: calc(50% - 1rem); } /* 2 colunas */
+}
+@media (max-width: 560px){
+  .card { width: 100%; } /* 1 coluna no mobile */
+}
+
+/* Imagem com bordas arredondadas e crop */
+.card-media img{
+  display:block;
+  width:100%;
+  height: 200px;
+  object-fit: cover;
+  /* se quiser bordas arredondadas apenas na imagem:
+     border-top-left-radius:12px; border-top-right-radius:12px; */
+}
+
+/* Conteúdo do card */
+.card-body{
+  padding: 0.75rem 1rem;
+}
+
+/* Hover: levitar + escala leve */
+.card:hover,
+.card:focus{
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 14px 30px rgba(16,24,40,0.12);
+  outline: none;
+}
+
+/* Efeito de foco acessível (quando navega com teclado) */
+.card:focus {
+  box-shadow: 0 0 0 4px rgba(0,123,255,0.12);
+}
+
+/* Se quiser imagens circulares (ex: avatares), use uma classe extra */
+.card-media.circle img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  margin: 0.75rem auto 0;
+  display:block;
+  object-fit:cover;
+}
+
+/* Texto do título */
+.card-body h3{
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+}
+
+/* Link visual ao passar o mouse no título (opcional) */
+.card-body h3 a{
+  color: inherit;
+  text-decoration: none;
+}
+.card-body h3 a:hover{
+  text-decoration: underline;
+}
