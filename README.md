@@ -53,15 +53,7 @@
   <tr >
     <td width="50%" >
       <div style="display: inline_block " >
-        <img align="center" alt="Feltex-Java" height="50" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
-        <img align="center" alt="Feltex-Spring" height="50" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" />
-        <img align="center" alt="Feltex-github" height="50" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubcodespaces/githubcodespaces-original.svg" />
-        <img align="center" alt="Feltex-gitlab" height="50" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" />
-        <img align="center" alt="Feltex-mysql" height="50" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
-        <img align="center" alt="Feltex-html" height="50" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-        <img align="center" alt="Feltex-hibernate" height="50" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hibernate/hibernate-original-wordmark.svg" />
-        <img align="center" alt="Feltex-grafana" height="50" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original-wordmark.svg" />
-        <img align="center" alt="Feltex-eclipse" height="50" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg" />  
+ <img src="https://skillicons.dev/icons?i=java,spring,mysql,gitlab,grafana,hibernate,idea,jenkins" />
       </div>
     </td>
     <td >
