@@ -73,7 +73,7 @@
 - **Paschoalotto** – MIS (Management Information Systems) Intern
 - **Stone Co. Linx** – Support Analyst
 - **Lecom Tecnologia** – Java Developer
-- **WINTAYLOR WFO** - Java Developer (currently)
+- **Wintaylor WFO** - Java Developer (currently)
   
 
 ## 📁 My MKDocs site
