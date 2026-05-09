@@ -73,6 +73,8 @@
 - **Paschoalotto** – MIS (Management Information Systems) Intern
 - **Stone Co. Linx** – Support Analyst
 - **Lecom Tecnologia** – Java Developer
+- **WINTAYLOR WFO** - Java Developer (currently)
+  
 
 ## 📁 My MKDocs site
 <a href="https://felipevalboeno.github.io/felipevalboeno/" target="_blank">
